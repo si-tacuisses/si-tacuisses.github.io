@@ -24,7 +24,18 @@ body {
   color: $darkGray;
 }
 
+// .container {
+//   background: $lightGray;
+//   margin: 0 auto;
+//   max-width: 740px;
+//   padding: 0 10px;
+//   width: 100%;
+//   border-radius: 5px;
+// }
+
+
 .container {
+  border-radius: 5px;
   background: $lightGray;
   margin: 0 auto;
   max-width: 740px;

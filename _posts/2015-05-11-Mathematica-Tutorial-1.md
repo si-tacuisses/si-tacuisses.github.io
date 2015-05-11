@@ -4,31 +4,36 @@ title: Tutorial - Wolfram Mathematica for Economists - Part 1
 ---
 
 I am writing a series on how to use [Wolfram Mathematica](http://www.wolfram.com/mathematica/) for economic research, take notes and do exploratory data analysis.
-I will focus in the examples on economic applications and some widely used models to illustrated the Mathematica's efficiency.
+I will focus in the examples on economic applications and some widely used models to illustrated Mathematica's efficiency.
 
 
 
 Mathematica is a very powerful and expressive programming language, which I use on a daily basis to do my research. It is unrivalled in Symbolic computation and it is very fast to test ideas, sketch a simple model or review results in journals.
 Once you see how powerful this tool is for note taking in maths heavy classes you will appreciate it too.
 
-However, before dive into some interesting applications of Mathematica to real problems, let's get acquainted with he basics.
+However, before we dive into some interesting applications of Mathematica, let's get acquainted with he basics.
 
 ## First Things First
 
-Before we  start with some economics examples to get acquainted with Mathematica we need to understand the most important parts of the language and how they tie together. We look at the basic types `Integer`, `Rational`,`Real`, `String` `Complex` and  `List`  and how to defined and use basic functions.
+Before we start with some economics examples to get acquainted with Mathematica we need to understand the most important parts of the language and how they tie together. We look at how to evaluate expressions and then look at the most important types (i.e. integers, lists). After this me move on to learn how to defined and use basic functions.
+
+### How to evaluate a function
+
+```Mathematica
+In[1]   Print["Hello World!"]
+Out[2]  Hello World!
+```
 
 ### Numbers
 
-Let's look at `Integer`s first in the followint example. To evaluate the `1+1` press `Shift` and `Enter` and you should get `2`.
+Let's look at `Integer`s first. To evaluate the `1+1` press `Shift` and `Enter` and you should get `2`.
 
 ```Mathematica
 In[1]   1 + 1
 Out[2]  2
 ```
 
-Mathematica avoids conversion of types to more general types whenever possible to avoid any loss of precision (i.e. 1/3 is not transformed from a rational to a real number since this would reduce precision).
- Integers as far as possible and does not coerce them to `Real`s (i.e. Real Numers or floating point Numbers). In fact Mathematica tries to keep percision as high as possible by keeping `Integer`s and `Rational`s (i.e. Fractions) throughout the evaluation process.
-Any of these two can be coerced to a `Real` if eitehr a floating point number is used in the operation or it is explicitelly transformed using `N`
+Mathematica avoids conversion of types to more general types whenever possible to avoid any loss of precision (i.e. 1/3 is not transformed from a rational to a real number since this would reduce precision). However if you need to have a real valued number you can cooerce it to a `Real` by eitehr a floating point number is used in the operation or it is explicitelly transformed using `N`
 
 ```Mathematica
 In[1]   1 + 1/2
@@ -41,10 +46,12 @@ Out[3]  1.5
 
 The basic binary operators such as `+` , `-`, `*` and `/` are used just as you use them in any other context no brackets, braces or other programming syntax is involved[^defbinary].
 Howeve if you want to call a function which is not one of these you will need to call them using function syntax. By function syntax I mean to call for example \\(\ln(x)\\) which takes one argument using the mma function `Log[x]`.
+
 ```Mathematica
 In[1]   Log[1]
 Out[1]  0
 ```
+
 Some things to note here. Official mma functions start with a capital letter and are complete words in the CammelCase style, unlike MATLAB where functions are lower case and excessively shortened (e.g. num2str). Furthermore unlike MATLAB, Python, R, C/C++ and many other languages the arguments passed to a function are enclosed in square brackets `[ ]`. Parenthesis `( )` are used exclusively for grouping and define the order of operations.
 
 ### Lists
