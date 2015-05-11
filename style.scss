@@ -19,11 +19,13 @@ html {
 
 body {
 	background: $white;
+  background-image: url("{{ site.baseurl }}/images/escheresque.png");
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
 
 .container {
+  background: $lightGray;
   margin: 0 auto;
   max-width: 740px;
   padding: 0 10px;
@@ -118,6 +120,7 @@ img {
 .date {
   font-style: italic;
   color: $gray;
+  font-size: 13px;
 }
 
 // Specify the color of the selection
