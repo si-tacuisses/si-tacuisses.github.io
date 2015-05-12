@@ -3,9 +3,15 @@ layout: post
 title: Tutorial - Wolfram Mathematica for Economists - Part 1
 ---
 
+
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
 I am writing a series on how to use [Wolfram Mathematica](http://www.wolfram.com/mathematica/) for economic research, take notes and do exploratory data analysis.
 I will focus in the examples on economic applications and some widely used models to illustrated Mathematica's efficiency.
-
 
 
 Mathematica is a very powerful and expressive programming language, which I use on a daily basis to do my research. It is unrivalled in Symbolic computation and it is very fast to test ideas, sketch a simple model or review results in journals.
@@ -13,7 +19,7 @@ Once you see how powerful this tool is for note taking in maths heavy classes yo
 
 However, before we dive into some interesting applications of Mathematica, let's get acquainted with he basics.
 
-## First Things First
+## First Things First 
 
 Before we start with some economics examples to get acquainted with Mathematica we need to understand the most important parts of the language and how they tie together. We look at how to evaluate expressions and then look at the most important types (i.e. integers, lists). After this me move on to learn how to defined and use basic functions.
 
@@ -70,10 +76,13 @@ Out[3] 14
 
 Lists are a central part of Mathematica and a lot of function parameters are supplied as lists.
 ### Functions
-One of the most widely used functional Production Functions is [Cobb-Douglas][wikiCobb]. Lets look at this omnipresent function.
-\\[
+One of the most widely used functional Production Functions is [Cobb-Douglas](en.wikipedia.org/wiki/Cobb–Douglas_production_function) \\eqref{eq:1}. Lets look at this omnipresent function.
+
+\\begin{equation}
 Y=F(L,K)=A L^\alpha K^\beta
-\\]
+\label{eq:1}
+\\end{equation}
+
 
 Usually in textbook examples it is assumed that the returns to scale
 are constant. This means effectively that \\(\beta=1-\alpha\\) and
