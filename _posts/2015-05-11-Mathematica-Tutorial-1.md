@@ -4,12 +4,6 @@ title: Tutorial - Wolfram Mathematica for Economists - Part 1
 ---
 
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
 I am writing a series on how to use [Wolfram Mathematica](http://www.wolfram.com/mathematica/) for economic research, take notes and do exploratory data analysis.
 I will focus in the examples on economic applications and some widely used models to illustrated Mathematica's efficiency.
 
