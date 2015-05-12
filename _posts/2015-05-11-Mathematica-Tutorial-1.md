@@ -33,7 +33,7 @@ In[1]   1 + 1
 Out[2]  2
 ```
 
-Mathematica avoids conversion of types to more general types whenever possible to avoid any loss of precision (i.e. 1/3 is not transformed from a rational to a real number since this would reduce precision). However if you need to have a real valued number you can cooerce it to a `Real` by eitehr a floating point number is used in the operation or it is explicitelly transformed using `N`
+Mathematica avoids conversion of types to more general types whenever possible to avoid any loss of precision (i.e. 1/3 is not transformed from a rational to a real number since this would reduce precision). However if you need a real valued number you can coerce it to a `Real` by either doing an operation with a `Real` or explicitly transform it  using the `N` function.
 
 ```Mathematica
 In[1]   1 + 1/2
@@ -44,15 +44,15 @@ In[3]   N[3/2]
 Out[3]  1.5
 ```
 
-The basic binary operators such as `+` , `-`, `*` and `/` are used just as you use them in any other context no brackets, braces or other programming syntax is involved[^defbinary].
-Howeve if you want to call a function which is not one of these you will need to call them using function syntax. By function syntax I mean to call for example \\(\ln(x)\\) which takes one argument using the mma function `Log[x]`.
+The basic binary operators such as `+` , `-`, `*` and `/` are used just as you use them in any other context, no brackets, braces or other programming syntax is involved.
+However if you want to call a function which is not one of these you will need to call them using function syntax. By function syntax I mean to call for example \\(\ln(x)\\) which takes one argument using the Mathematica function `Log[x]`.
 
 ```Mathematica
 In[1]   Log[1]
 Out[1]  0
 ```
 
-Some things to note here. Official mma functions start with a capital letter and are complete words in the CammelCase style, unlike MATLAB where functions are lower case and excessively shortened (e.g. num2str). Furthermore unlike MATLAB, Python, R, C/C++ and many other languages the arguments passed to a function are enclosed in square brackets `[ ]`. Parenthesis `( )` are used exclusively for grouping and define the order of operations.
+Some things to note here. Official Mathematica functions start with a capital letter and are complete words in the CammelCase style, unlike MATLAB where functions are lower case and excessively shortened. Furthermore unlike MATLAB, Python, R, C/C++ and many other languages the arguments passed to a function are enclosed in square brackets `[ ]`. Parenthesis `( )` are used exclusively for grouping and define the order of operations.
 
 ### Lists
 Vectors, as you might already know, are simply Lists and in Mathematica vectors are effectively called `List`.  Conversly a matrix is a vector of vectors and as such matrices are implemented in Mathematica as lists of lists.  And higher order structures, say an array with 3 dimensions is a list of lists of lists. I guess you get the point.
