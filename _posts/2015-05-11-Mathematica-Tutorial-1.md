@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mathpost
 title: Tutorial - Wolfram Mathematica for Economists - Part 1
 ---
 
@@ -19,6 +19,8 @@ Before we start with some economics examples to get acquainted with Mathematica 
 
 ### How to evaluate a function
 
+I assume that you have a working copy of Mathematica and know how to open and edit a notebook.
+To evaluate a cell/input, press the combinations `Shift`+`Enter` while you have highlighted the cell you want to evaluate. It is customary to start programming in any language with a _Hello World_ example. And here it is.
 ```Mathematica
 In[1]   Print["Hello World!"]
 Out[2]  Hello World!
@@ -106,11 +108,22 @@ We use the build-in [Plot3D](https://reference.wolfram.com/language/ref/Plot3D.h
 ```Mathematica
 Plot3D[ CobbDouglas[l, k, 1, .5], {l, 0, 1}, {k, 0, 1},
     AxesLabel -> {"L","K","Y"}, 
-    ColorFunction -> "DarkRainbow"],
+    ColorFunction -> "DarkRainbow",
     MeshFunctions -> {#3 &}]
 ```
 
-![cobbDouglas]({{ site.baseurl }}/images/cobb_douglas.png "CobbDouglas")
+![cobbDouglas]({{ site.baseurl }}/images/cobb_douglas2.png "CobbDouglas")
+
+Now let's look at this plot. We have told `Plot3D` to plot the `CobbDouglas`  function for `l`  from `0` to `1` passing this as a list, where the first element is the variable to which this interval applies. And we do the same thing for `k`. It is also good practice to label the axes and we do that by passing to the `Plot3D` option `AxesLabel` the list of labels to be used `{"L","K","Y"}`. Next we choose a nice `ColorFunction`. This function applies a predefined colour scale to our \\(Y\\) values.
+And finally, as good economists we plot some isoquants (i.e. level curves).
+Since isoquants are simply the combination of input factors which yield the same output \\(Y\\), we can tell `Plot3D` to place lines (i.e. Mesh) at constant values of \\(Y\\) by passing to the option `MeshFunctions` the pure function `{#3 &}`. I will cover pure functions in one of the next posts on Functional Programming.
+
+## Conclusion
+Mathematica has a large community of users writing packages and offering advice on how to solve problems. The best such site is [mathematica.stackexchange.com](htt://http://mathematica.stackexchange.com). If you have a question it has most likely been answered here. And last but not least Mathematica's documentation [online](http://reference.wolfram.com/language/) and offline is superb. Wolfram Mathematica has one of the best documentation I have come across complete of references, neat examples, possible applications and issues.
+>Remember: The Documentation is your Friend!
+
+This is just a taste and there is more to come. Stay tuned.
+
 
 
 
