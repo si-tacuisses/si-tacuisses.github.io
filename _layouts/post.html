@@ -67,5 +67,19 @@
 {% include scripts.html %}
 {% if page.math %}<!-- TWERT comment -->{% include mathjax.html %}{% endif %}
 
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    // Add the class of pre requried by Google Code Prettify
+    $('pre').addClass('prettyprint');
+    $('pre').addClass('lang-mma');
+    prettyPrint()
+});
+</script>
+
+
+
+
 </body>
 </html>
