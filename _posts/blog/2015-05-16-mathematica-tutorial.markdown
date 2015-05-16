@@ -17,6 +17,9 @@ I am writing a series on how to use [Wolfram Mathematica](http://www.wolfram.com
 I will focus in the examples on economic applications and some widely used models to illustrated Mathematica's efficiency.
 
 
+{{ site.url }}
+
+
 
 * Table of Contents
 {:toc}
