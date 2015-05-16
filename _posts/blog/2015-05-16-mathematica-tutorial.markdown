@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Wolram Mathematica for Economists - Tutorial - Part 1"
+title: "Wolfram Mathematica for Economists - Tutorial - Part 1"
 modified:
 categories: blog
 excerpt: "The start of a series of posts on how to use Wolfram Mathmatica for Ecoonomics."
@@ -11,6 +11,7 @@ date: 2015-05-16T10:41:03+02:00
 comments: true
 share: true
 math: true
+code: true
 ---
 
 
@@ -21,15 +22,12 @@ I will focus in the examples on economic applications and some widely used model
 {:toc}
 
 
-~~~
-Print["Hello World!"]
-Hello World!
-~~~
 
-~~~
+
+```
 In[1]   Print["Hello World!"]
 Out[2]  Hello World!
-~~~
+```
 
 Mathematica is a very powerful and expressive programming language, which I use on a daily basis to do my research. It is unrivalled in Symbolic computation and it is very fast to test ideas, sketch a simple model or review results in journals. Once you see how powerful this tool is for note taking in maths heavy classes you will appreciate it too.
 However, before we dive into some interesting applications of Mathematica, let's get acquainted with he basics.
@@ -135,7 +133,9 @@ Plot3D[ CobbDouglas[l, k, 1, .5], {l, 0, 1}, {k, 0, 1},
     MeshFunctions -> {#3 &}]
 ```
 
+
 ![cobbDouglas]({{ site.baseurl }}/images/cobb_douglas2.png "CobbDouglas")
+{: .imageoutput}
 
 Now let's look at this plot. We have told `Plot3D` to plot the `CobbDouglas`  function for `l`  from `0` to `1` passing this as a list, where the first element is the variable to which this interval applies. And we do the same thing for `k`. It is also good practice to label the axes and we do that by passing to the `Plot3D` option `AxesLabel` the list of labels to be used `{"L","K","Y"}`. Next we choose a nice `ColorFunction`. This function applies a predefined colour scale to our \\(Y\\) values. And finally, as good economists we plot some isoquants (i.e. level curves). Since isoquants are simply the combination of input factors which yield the same output \\(Y\\), we can tell `Plot3D` to place lines (i.e. Mesh) at constant values of \\(Y\\) by passing to the option `MeshFunctions` the pure function `{#3 &}`. I will cover pure functions in one of the next posts on Functional Programming.
 
