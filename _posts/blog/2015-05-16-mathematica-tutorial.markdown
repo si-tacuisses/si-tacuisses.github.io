@@ -44,7 +44,7 @@ To evaluate a cell/input, press the combinations `Shift`+`Enter` while you have 
 
 ```
 In[2]:=	Print["Hello World!"]
-Out[2]= Hello World!
+Out[2]=	Hello World!
 ```
 
 ## Numbers
@@ -85,10 +85,10 @@ Vectors, as you might already know, are simply Lists and in Mathematica vectors 
 ```
 In[1]:=	{1, 2, 3} + {1, 2, 3}
 Out[1]=	{2, 4, 6}
-In[2]:= 2*{1,2,3}
-Out[2]= {2,4,6}
-In[3]:=  {1, 2, 3}.{1, 2, 3}
-Out[3]= 14
+In[2]:=	2*{1,2,3}
+Out[2]=	{2,4,6}
+In[3]:=	{1, 2, 3}.{1, 2, 3}
+Out[3]=	14
 ```
 
 Lists are a central part of Mathematica and a lot of function parameters are supplied as lists.
