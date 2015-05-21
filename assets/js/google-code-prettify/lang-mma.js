@@ -322,8 +322,8 @@
         // (``float). Note: while 1.2` is possible 1.2`` is not. At the end an exponent (float*^+12) can follow.
         [PR.PR_LITERAL, new RegExp('^(?:' + pFloat + pPrecision + '?(?:\\*\\^[+-]?\\d+)?)'),null],
 
-        ['mma_iot', /^(?:In|Out)\[[0-9]*\]/,null],
-
+        
+        ['mma_iot', /^(?:In|Out)\[[0-9]*\](?:\:=|=)/,null],
         ['lang-mma-usage', /^([a-zA-Z\$]+(?:`?[a-zA-Z0-9\$])*::[a-zA-Z\$][a-zA-Z0-9\$]*):?/,null],
 
         // this makes a look-ahead match for something like variable:{_Integer}
