@@ -4,7 +4,7 @@ title: "Wolfram Mathemtica for Economists - Tutorial - Part 2"
 modified:
 categories: blog
 excerpt:
-tags: [tutorial, Mathematica, ]
+tags: [tutorial, Mathematica]
 image:
   feature:
   credit:
