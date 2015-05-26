@@ -6,4 +6,5 @@ _site
 Gemfile
 Gemfile.lock
 node_modules
-package.json
+package.jsonmatecon.sublime-project
+matecon.sublime-workspace
