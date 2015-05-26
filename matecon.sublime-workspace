@@ -1,0 +1,2070 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"pagen",
+				"pagenumbering{numstyle}	latex-document"
+			],
+			[
+				"vs",
+				"vskip	tex"
+			],
+			[
+				"rule",
+				"rule{width}{thickness}	latex-document"
+			],
+			[
+				"do",
+				"dots	tex"
+			],
+			[
+				"cel",
+				"clearpage	latex-document"
+			],
+			[
+				"norm",
+				"normalsize	latex-document"
+			],
+			[
+				"end",
+				"end{marginfigure}	Proposa.tex"
+			],
+			[
+				"sec",
+				"section*{title}	latex-document"
+			],
+			[
+				"in",
+				"includegraphics{name}	latex-document"
+			],
+			[
+				"maket",
+				"maketitle	latex-document"
+			],
+			[
+				"sum",
+				"sumFreq"
+			],
+			[
+				"key",
+				"keys"
+			],
+			[
+				"wo",
+				"words"
+			],
+			[
+				"wor",
+				"word"
+			],
+			[
+				"lis",
+				"listdir"
+			],
+			[
+				"outp",
+				"outputgap"
+			],
+			[
+				"infl",
+				"inflation"
+			],
+			[
+				"ou",
+				"outputgap"
+			],
+			[
+				"out",
+				"Output"
+			],
+			[
+				"scr",
+				"scriptN"
+			],
+			[
+				"scrip",
+				"scripts"
+			],
+			[
+				"car",
+				"cards"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"p",
+				"print"
+			],
+			[
+				"ta",
+				"tape"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"ca",
+				"cards"
+			],
+			[
+				"text",
+				"textbf{text}	latex-document"
+			],
+			[
+				"del",
+				"del_y"
+			],
+			[
+				"de",
+				"del_y"
+			],
+			[
+				"ran",
+				"random"
+			],
+			[
+				"n",
+				"n_trials"
+			],
+			[
+				"n_",
+				"n_runs"
+			],
+			[
+				"ra",
+				"range"
+			],
+			[
+				"i",
+				"if	If Condition"
+			],
+			[
+				"cap",
+				"caption{title}	latex-document"
+			],
+			[
+				"cdo",
+				"cdots	latex-document"
+			],
+			[
+				"med",
+				"medskip	tex"
+			],
+			[
+				"frame",
+				"framesubtitle{frame subtitle text}	class-beamer"
+			],
+			[
+				"b",
+				"block	Beamer: Block Element"
+			],
+			[
+				"fig",
+				"fig	figureLaTeX"
+			],
+			[
+				"skip",
+				"mskip	tex"
+			],
+			[
+				"quot",
+				"end{quote}	latex-document"
+			],
+			[
+				"cleardo",
+				"cleardoublepage	latex-document"
+			],
+			[
+				"abstr",
+				"begin{abstract}	latex-document"
+			],
+			[
+				"cler",
+				"clearpage	latex-document"
+			],
+			[
+				"newl",
+				"newline	latex-document"
+			],
+			[
+				"inf",
+				"inf	latex-mathsymbols"
+			],
+			[
+				"q",
+				"qquad	tex"
+			],
+			[
+				"clar",
+				"clearpage	latex-document"
+			],
+			[
+				"mini",
+				"begin{minipage}[position]{width}	latex-document"
+			],
+			[
+				"ver",
+				"vert	latex-mathsymbols"
+			],
+			[
+				"left",
+				"left|	latex-document"
+			],
+			[
+				"eq",
+				"equiv	latex-mathsymbols"
+			],
+			[
+				"use",
+				"use	Usepackage"
+			],
+			[
+				"document",
+				"documentclass{style}	latex-document"
+			],
+			[
+				"part",
+				"partial	latex-mathsymbols"
+			],
+			[
+				"rig",
+				"right)	latex-document"
+			],
+			[
+				"textt",
+				"texttt{text}	latex-document"
+			],
+			[
+				"cha",
+				"chapter*{title}	latex-document"
+			],
+			[
+				"sub",
+				"sub	Sub Section"
+			],
+			[
+				"lst",
+				"lstinline	listings"
+			],
+			[
+				"cat",
+				"caption[short]{title}	latex-document"
+			],
+			[
+				"cit",
+				"cite[text]{keylist}	latex-document"
+			],
+			[
+				"foot",
+				"footnote	tex"
+			],
+			[
+				"clear",
+				"clearpage	latex-document"
+			],
+			[
+				"foo",
+				"footnote	tex"
+			],
+			[
+				"cle",
+				"clearpage	latex-document"
+			],
+			[
+				"math",
+				"mathcal{text}	latex-document"
+			],
+			[
+				"begin",
+				"begin{abstract}	latex-document"
+			],
+			[
+				"newcom",
+				"newcommand{cmd}{def}	latex-document"
+			],
+			[
+				"usepaka",
+				"usepackage{package}	latex-document"
+			],
+			[
+				"title",
+				"title{text}	latex-document"
+			],
+			[
+				"docum",
+				"documentclass{article}	New Article"
+			],
+			[
+				"vf",
+				"vfill	tex"
+			],
+			[
+				"new",
+				"newcommand{cmd}{def}	latex-document"
+			],
+			[
+				"Bigs",
+				"bigskipamount	tex"
+			],
+			[
+				"be",
+				"begin"
+			],
+			[
+				"f",
+				"file	Subfile"
+			],
+			[
+				"fra",
+				"frac{num}{den}	latex-document"
+			],
+			[
+				"table",
+				"tableofcontents	latex-document"
+			],
+			[
+				"usepackage",
+				"usepackage{package}	latex-document"
+			],
+			[
+				"usepa",
+				"usepackage{package}	latex-document"
+			],
+			[
+				"chatp",
+				"chapter{title}	latex-document"
+			],
+			[
+				"doc",
+				"documentclass{report}	New Report"
+			],
+			[
+				"biblio",
+				"bibliography{bib ﬁles}	biblatex"
+			],
+			[
+				"bi",
+				"bibliographystyle{style}	latex-document"
+			],
+			[
+				"documen",
+				"documentclass{article}	New Article"
+			],
+			[
+				"beamer",
+				"setbeamertemplate{element name}{args}	class-beamer"
+			],
+			[
+				"bib",
+				"bibliography{file}	latex-document"
+			],
+			[
+				"ri",
+				"right)	latex-document"
+			],
+			[
+				"cite",
+				"cite{keylist}	latex-document"
+			],
+			[
+				"s",
+				"square"
+			],
+			[
+				"im",
+				"imaginary"
+			],
+			[
+				"tim",
+				"timeFlies"
+			],
+			[
+				"hel",
+				"HelloWorld"
+			],
+			[
+				"den",
+				"denx"
+			],
+			[
+				"ob",
+				"object	object"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"d",
+				"double"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"pl",
+				"plus"
+			],
+			[
+				"turnLe",
+				"turnLeft"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/LaTeXing/LaTeX.sublime-build",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"prefre",
+				"Preferences: Settings - User"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"cle",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"set gfm",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"set mar",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"set ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set gmf",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"set jek",
+				"Set Syntax: Markdown (Jekyll)"
+			],
+			[
+				"gmf",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"set css",
+				"Set Syntax: CSS"
+			],
+			[
+				"gfm",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"pretti",
+				"HTMLPrettify"
+			],
+			[
+				"snippe",
+				"Snippet: core-dropdown"
+			],
+			[
+				"snippet",
+				"Snippet: core-menu"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"set late",
+				"Set Syntax: LaTeXing"
+			],
+			[
+				"yam",
+				"Set Syntax: YAML"
+			],
+			[
+				"clear",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"cl",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"cel",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"cler",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"tikz ",
+				"Snippet: TikZ: node"
+			],
+			[
+				"latexing tik",
+				"LaTeXing: Toggle TikZ Live Preview"
+			],
+			[
+				"llive",
+				"LaTeXing: Toggle TikZ Live Preview"
+			],
+			[
+				"set tizk",
+				"Set Syntax: TikZ"
+			],
+			[
+				"latexing",
+				"LaTeXing: Open"
+			],
+			[
+				"linter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"quic",
+				"Build: Choose Quick Build"
+			],
+			[
+				"linter view",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"err",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"linter ",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"show",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"enable",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"chktex",
+				"BracketHighlighter: Select Next Attribute (left)"
+			],
+			[
+				"rebui",
+				"LaTeXing: Rebuild Cache (Hard)"
+			],
+			[
+				"rebuil",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"pref late",
+				"Preferences: LaTeXing Settings - User"
+			],
+			[
+				"count",
+				"LaTeXing: Texcount"
+			],
+			[
+				"coun",
+				"LaTeXing: Texcount"
+			],
+			[
+				"late",
+				"LaTeXing: Check System"
+			],
+			[
+				"set latex",
+				"Set Syntax: LaTeXing"
+			],
+			[
+				"Snippet: Bibtex ",
+				"Snippet: BibTeX Manual"
+			],
+			[
+				"quick",
+				"Build: Choose Quick Build"
+			],
+			[
+				"choo",
+				"Build: Choose Quick Build"
+			],
+			[
+				"cho",
+				"Build: Choose Quick Build"
+			],
+			[
+				"chood",
+				"Build: Choose Quick Build"
+			],
+			[
+				"quick ",
+				"Build: Choose Quick Build"
+			],
+			[
+				"rename",
+				"LaTeXing: Rename Environment"
+			],
+			[
+				"end",
+				"Snippet: \\begin{}…\\end{}"
+			],
+			[
+				"qui",
+				"Build: Choose Quick Build"
+			],
+			[
+				"build",
+				"Build: Choose Quick Build"
+			],
+			[
+				"buil",
+				"Build: Choose Quick Build"
+			],
+			[
+				"set py",
+				"Set Syntax: Python"
+			],
+			[
+				"set multi",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"markdo",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"mark",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"INSTAL",
+				"Package Control: Install Package"
+			],
+			[
+				"REMOGE",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"insta ",
+				"Package Control: Install Package"
+			],
+			[
+				"set beamer",
+				"Set Syntax: LaTeX Beamer"
+			],
+			[
+				"beamer",
+				"Snippet: New Beamer"
+			],
+			[
+				"set beam",
+				"Set Syntax: LaTeX Beamer"
+			],
+			[
+				"set latex b",
+				"Set Syntax: LaTeX Beamer"
+			],
+			[
+				"beamer them",
+				"Snippet: BeamerTheme"
+			],
+			[
+				"snipp beamer",
+				"Snippet: New Beamer"
+			],
+			[
+				"snipbea",
+				"Snippet: newBeamer"
+			],
+			[
+				"clr",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"snip",
+				"Snippet: New Article"
+			],
+			[
+				"claar",
+				"Bookmarks: Clear All"
+			],
+			[
+				"pream",
+				"Preferences: MarkdownEditing Settings – Default"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa li",
+				"Package Control: List Packages"
+			],
+			[
+				"rebiu",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"clera",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"celra",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"celar",
+				"Bookmarks: Clear All"
+			],
+			[
+				"clea",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"re",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"reb",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"off",
+				"LaTeXing: Toggle Offline Mode"
+			],
+			[
+				"sync",
+				"LaTeXing: Synchronise Remote Data"
+			],
+			[
+				"syncr",
+				"LaTeXing: Synchronise Remote Data"
+			],
+			[
+				"cache",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"snip bea",
+				"Snippet: newBeamer"
+			],
+			[
+				"snippet ",
+				"Snippet: mephasisLaTeX"
+			],
+			[
+				"math",
+				"Set Syntax: TeX Math"
+			],
+			[
+				"",
+				"Build: Choose Quick Build"
+			],
+			[
+				"partial",
+				"Preferences: LaTeXing Settings - Toggle Value"
+			],
+			[
+				"make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"snipp ar",
+				"Snippet: New Article"
+			],
+			[
+				"tikz",
+				"Set Syntax: TikZ"
+			],
+			[
+				"packa contr dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"setjava",
+				"Set Syntax: Java"
+			],
+			[
+				"latexin",
+				"LaTeXing: New Command for Current Word"
+			],
+			[
+				"cleare",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"build ",
+				"Build: Choose Quick Build"
+			],
+			[
+				"build s",
+				"Build: Choose Quick Build"
+			],
+			[
+				"git gu",
+				"Git: Graph Current File"
+			],
+			[
+				"snipe art",
+				"Snippet: New Article"
+			],
+			[
+				"latexing opt",
+				"Snippet: LaTeXing Option PDF Name"
+			],
+			[
+				"sni",
+				"Snippet: LaTeXing Option Dictionary"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"packa ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"enable pa",
+				"Package Control: Enable Package"
+			],
+			[
+				"enalbe",
+				"Snippet: equation with label LaTeX"
+			],
+			[
+				"latexin remo",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"live",
+				"LaTeXing: Toggle TikZ Live Preview"
+			],
+			[
+				"cleE",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				" install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa contr",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"list pak",
+				"Package Control: List Packages"
+			],
+			[
+				"set ma",
+				"Set Syntax: MATLAB"
+			],
+			[
+				"set m",
+				"Set Syntax: MATLAB"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 682.0,
+		"history":
+		[
+			"os.system(\"grep\")",
+			"print(os.system(\"grep\"))",
+			"print(os.system(\"pwd\"))",
+			"os.system(\"pwd\")",
+			"os.system(pwd)",
+			"os.system(\"pwd)",
+			"os.system(\"ls\")",
+			"os.system(\"pwd\")",
+			"sys.stdin('ls')",
+			"sys.stdin",
+			"sys.stin",
+			"sys('ls')",
+			"vars(sys)",
+			"print",
+			"help(print)",
+			"help(sys)",
+			"help sys",
+			"sys",
+			"import sys",
+			"os.sys(\"ls\")",
+			"import os",
+			"print(\"this\")",
+			"ls",
+			"ks",
+			"print('t')",
+			"pring('t')",
+			"stop",
+			"clear()",
+			"clc",
+			"clear",
+			"cleear",
+			"test",
+			"clear",
+			"ls",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": true,
+		"status_bar_visible": true
+	},
+	"expanded_folders":
+	[
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io"
+	],
+	"file_history":
+	[
+		"/Users/lucaverginer/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/matecon.sublime-project",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/blog/2015-05-24-vietnamese-snake-puzzle.markdown",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_drafts/2015-05-16-wolfram-mathemtica-for-economists-tutorial-part-2.markdown",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_templates/post",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/blog/2015-05-24-cherils-birtday-mathematica.markdown",
+		"/Users/lucaverginer/Dropbox/CODING/WebDevelopment/nodejs/phantom/rasterize.js",
+		"/Users/lucaverginer/Dropbox/CODING/WebDevelopment/nodejs/phantom/speed.js",
+		"/Users/lucaverginer/Dropbox/CODING/WebDevelopment/nodejs/phantom/example.js",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/blog/2015-05-16-mathematica-tutorial.markdown",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/.sass-cache/1702d098f369dc10af8c7aa627273ed521694fef/_to-deprecate.scssc",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/Mathematica-Tutorial-1/index.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_layouts/post.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/assets/css/google-code-prettify/prettify.css",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/assets/js/google-code-prettify/lang-mma.js",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_includes/head.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_includes/_prettyhead.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_includes/prettyprint.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/assets/css/google-code-prettify/prettify-original.css",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_layouts/page.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/assets/js/google-code-prettify/prettify.js",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/assets/js/google-code-prettify/lang-ml.js",
+		"/Users/lucaverginer/.zshrc",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_config.yml",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/.git/MERGE_MSG",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_includes/highlight.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/notes/ideas.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/blog/2015-05-16-wolfram-mathemtica-for-economists-tutorial-functional-programming.markdown",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/.sass-cache/4a52390554062cb74cd7378ec6b2e4886ba04738/_px-to-rem.scssc",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/.sass-cache/cecf0c85599f41452d2db85fe1e91d9159547cb7/_timing-functions.scssc",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/feed.xml",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/blog/2015-05-16-wolfram-mathemtica-for-economists-tutorial-recursion.markdown",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_sass/_reset.scss",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/README.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_sass/_elements.scss",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/assets/js/google-code-prettify/lang-erlang.js",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/.sass-cache/1702d098f369dc10af8c7aa627273ed521694fef/_outer-container.scssc",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/blog/2015-05-16-wolfram-mathemtica-for-economists-tutorial-part-2.markdown",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_sass/_customlv.scss",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/.sass-cache/ae199fc6425eca40273bc0db4f4dc082f9eecc1f/_convert-units.scssc",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/.sass-cache/cecf0c85599f41452d2db85fe1e91d9159547cb7/_triangle.scssc",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/.sass-cache/1702d098f369dc10af8c7aa627273ed521694fef/_fill-parent.scssc",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_posts/tutorials/2015-05-15-mathematica-tutorial.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_includes/post-grid.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_layouts/archive.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/index.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_data/navigation.yml",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_data/footer.yml",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_layouts/article.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_config.yml",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_site/tutorials/mathematica-tutorial/index.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_sass/_syntax.scss",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_includes/pagination.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/package.json",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/.sass-cache/3118121b8632c997bac942b98df8815e9cb85588/_transition-property-name.scssc",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/.sass-cache/3118121b8632c997bac942b98df8815e9cb85588/_color-lightness.scssc",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_sass/vendor/bourbon/helpers/_linear-gradient-parser.scss",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/.sass-cache/5c93b151d5b9344df79d9680eb2b3c7f926461cc/_html5-input-types.scssc",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_includes/header.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_includes/mathjax.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si2/_posts/15-05-2015-TestEntry.md",
+		"/Users/lucaverginer/Downloads/skinny-bones-jekyll-master/_octopress.yml",
+		"/Users/lucaverginer/Downloads/skinny-bones-jekyll-master/_layouts/article.html",
+		"/Users/lucaverginer/Downloads/skinny-bones-jekyll-master/_includes/footer.html",
+		"/Users/lucaverginer/Downloads/skinny-bones-jekyll-master/_config.yml",
+		"/Users/lucaverginer/Downloads/skinny-bones-jekyll-master/_posts/15-05-2015-TestEntry.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/2015-05-11-Mathematica-Tutorial-1.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_layouts/default.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_includes/favicon.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_layouts/internal.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/12-12-2015-test-internal.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_mathpost.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/scholarBlog/_config.yml",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/scholarBlog/_layouts/page.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/scholarBlog/_layouts/pubblication.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/scholarBlog/_site/jekyll/update/2015/05/13/welcome-to-jekyll.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/scholarBlog/_sass/_syntax-highlighting.scss",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/scholarBlog/_posts/2015-05-13-welcome-to-jekyll.markdown",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/scholarBlog/_sass/_base.scss",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/scholarBlog/_site/2015/12/12/Test-Pubblication.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/scholarBlog/.gitignore",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/scholarBlog/_sass/_layout.scss",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/solid-jekyll/portfolio.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/solid-jekyll/_config.yml",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/solid-jekyll/_includes/footer.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/solid-jekyll/assets/fonts/glyphicons-halflings-regular.svg",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/solid-jekyll/assets/fonts/glyphicons-halflings-regular.woff",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/solid-jekyll/_posts/blog/2014-04-25-our-new-logo-is-here.markdown",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/christmas-cookies/_sass/_base.scss",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/christmas-cookies/about.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_layouts/articlereference.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_includes/figure.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_sass/_highlights.scss",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_includes/mathjax.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/style.scss",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/CNAME",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_includes/navbar.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_includes/forkme.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/about.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/publications.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_layouts/publication.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/index.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/cv.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/2015-05-11-GFM-Test.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/2014-3-3-Hello-World.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_site/GFM-Test/index.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/2015-05-11-GFM-Test",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/Codesnippet test",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_site/about/index.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_posts/greetings.md",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/si-tacuisses.github.io/_site/Hello-World/index.html",
+		"/Users/lucaverginer/Dropbox/CODING/MatEcon/GemFile",
+		"/Users/lucaverginer/Downloads/sydney-master/post.hbs",
+		"/Users/lucaverginer/Downloads/sydney-master/page.hbs",
+		"/Users/lucaverginer/Downloads/sydney-master/default.xml",
+		"/Users/lucaverginer/Dropbox/University/PhD/statement.tex",
+		"/Users/lucaverginer/Downloads/StackEdit local storage.json",
+		"/Users/lucaverginer/Downloads/sydney-master/default.json",
+		"/Users/lucaverginer/Dropbox/University/PhD/cv_8.tex",
+		"/Users/lucaverginer/Dropbox/University/PhD/propIEEE.tex",
+		"/Users/lucaverginer/Dropbox/University/PhD/test.tex",
+		"/Users/lucaverginer/Library/Caches/Google/Chrome/Default/Media Cache/data_3",
+		"/Users/lucaverginer/Library/Caches/Google/Chrome/Default/Media Cache/data_2",
+		"/Users/lucaverginer/Library/Caches/Google/Chrome/Default/Media Cache/data3",
+		"/Users/lucaverginer/Library/Mathematica/Kernel/init.m",
+		"/Users/lucaverginer/Dropbox/University/PhD/outline.md",
+		"/Users/lucaverginer/Dropbox/University/PhD/Complex Networks.bib",
+		"/Users/lucaverginer/Dropbox/University/PhD/propIEEE.bbl"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			".",
+			"/Users/lucaverginer/Dropbox/University/2013-14/z_Thesis/ThesisText/",
+			"/Users/lucaverginer/Dropbox/University/2013-14/z_Thesis/ThesisText/tex",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"perm8",
+			"coff",
+			"pun",
+			"mma_iot",
+			"\"ml\"",
+			"ml",
+			"PR.registerLangHandler",
+			"PR.regi",
+			"PR.R",
+			"PR",
+			"mma",
+			"^1",
+			"^",
+			"facebook",
+			"archive-wrap",
+			"wrap",
+			"archive-wrap",
+			"archiv",
+			"archive",
+			"bio-photo",
+			"both",
+			"takes the",
+			"pygm",
+			"grunt",
+			"pygm",
+			"pygments",
+			"mar",
+			"markd",
+			"helve",
+			"helv",
+			"math",
+			"nat",
+			"google",
+			"pubblication.html",
+			"posit",
+			"posti",
+			"header",
+			"head",
+			"header",
+			"800",
+			"wra",
+			"wrapp",
+			"site-h",
+			"post",
+			"contai",
+			"conta",
+			"ln",
+			"coe",
+			"coer",
+			"either",
+			"def",
+			"erro",
+			"high",
+			"nav",
+			"aside",
+			"nav",
+			"contain",
+			"you",
+			"images",
+			"ico",
+			"fav",
+			"ana",
+			"analy",
+			"anal",
+			"googl",
+			"http",
+			"over",
+			"overlo",
+			"^n",
+			"n",
+			"note",
+			"$",
+			"functio",
+			"$",
+			"avatar",
+			"site",
+			"backgr",
+			"backtr",
+			"date",
+			"font",
+			"cont",
+			"back",
+			"jax",
+			"math",
+			"Jeckyl",
+			"hand",
+			"page",
+			"merit",
+			"latex",
+			"bl",
+			"subgra",
+			"fra",
+			"attach",
+			"vergin",
+			"verg",
+			"emph",
+			"ITN",
+			"requiremen",
+			"depos",
+			"distance",
+			"geometr",
+			"scope",
+			"crook",
+			"ahl",
+			"date",
+			"review",
+			"pro",
+			"trade network",
+			"trade netw",
+			"Prod",
+			"trade netw",
+			"represe",
+			"fagiolo2008",
+			"fagiolo 2008",
+			"bendic",
+			"luca",
+			"dsge",
+			"ment",
+			"tant",
+			"elsn",
+			"newt",
+			"new",
+			"light",
+			"kaga",
+			"netwo",
+			"comp",
+			"figure",
+			"word "
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"assets",
+			"array",
+			"wordKey",
+			"wordClassKey",
+			"OutputFreq",
+			"OutputWords",
+			"InflationFreq",
+			"inflWords ",
+			"Moore ",
+			" Moore ",
+			" section~\\ref{",
+			"section",
+			" 	\n",
+			"mycolor3",
+			"mycolor2",
+			"mycolor1",
+			"mycolor3",
+			"mycolor2",
+			"mycolor1",
+			"$1$",
+			"$\\\\beta = 0.1$",
+			"$\\\\beta = 0.2$",
+			"$\\\\beta = 0.3$",
+			"$\\\\beta = 0.4$",
+			"$\\\\beta = 0.5$",
+			"$\\\\beta = 0.6$",
+			"$\\\\beta = 0.7$",
+			"$\\\\beta = 0.8$",
+			"$\\\\beta = 0.9$",
+			"$\\\\beta = 1.0$",
+			"$\\\\beta = 1.1$",
+			"seed",
+			"$\\\\alpha = 0.1$",
+			"$\\\\alpha = 1.0$",
+			"$\\\\alpha = 0.2$",
+			"$\\\\alpha = 0.3$",
+			"$\\\\alpha = 0.4$",
+			"$\\\\alpha = 0.5$",
+			"$\\\\alpha = 0.6$",
+			"$\\\\alpha = 0.7$",
+			"$\\\\alpha = 0.8$",
+			"$\\\\alpha = 0.9$",
+			"$\\\\beta = 1.1$",
+			"$\\\\beta = 0.1$",
+			"$\\\\beta = 0.2$",
+			"$\\\\beta = 0.3$",
+			"$\\\\beta = 0.4$",
+			"$\\\\beta = 0.5$",
+			"$\\\\beta = 0.6$",
+			"$\\\\beta = 0.7$",
+			"$\\\\beta = 0.8$",
+			"$\\\\beta = 0.9$",
+			"$\\\\beta = 1.0$",
+			"$\\\\alpha = .8$",
+			"$\\\\alpha = .9$",
+			"$\\\\alpha = 1$",
+			"$\\\\beta = 0.1$",
+			"$\\\\beta = 0.2$",
+			"$\\\\beta = 0.3$",
+			"$\\\\beta = 0.4$",
+			"$\\\\beta = 0.5$",
+			"$\\\\beta = 0.6$",
+			"$\\\\beta = 0.7$",
+			"$\\\\beta = 0.8$",
+			"$\\\\beta = 0.9$",
+			"$\\\\beta = 1.0$",
+			"$\\\\beta = 1.1$",
+			"seed",
+			"$\\\\beta = 0.1$",
+			"$\\\\beta = 0.2$",
+			"$\\\\beta = 0.3$",
+			"$\\\\beta = 0.4$",
+			"$\\\\beta = 0.5$",
+			"$\\\\beta = 0.6$",
+			"$\\\\beta = 0.7$",
+			"$\\\\beta = 0.8$",
+			"$\\\\beta = 0.9$",
+			"$\\\\beta = 1.0$",
+			"$\\\\beta = 1.1$",
+			"$\\beta = 1.1$",
+			"$\\beta = 1$",
+			"$\\beta = 1.1$",
+			"",
+			"$\\beta=1$",
+			"$\\beta=1.1$",
+			"",
+			"$\\beta:$ 0.",
+			"$\\beta:$",
+			"$\\beta:$0.",
+			"",
+			" beta:",
+			" rngseed:",
+			"3-5",
+			"",
+			" beta:",
+			" rngseed:",
+			"3-4",
+			"",
+			" beta:",
+			"alpha:",
+			"3-3 ",
+			"",
+			" beta:",
+			"rngseed:",
+			"3-4 ",
+			"",
+			" beta:",
+			"33 alpha:",
+			"ex ",
+			"--",
+			"",
+			"clearpage",
+			"\\clearpage",
+			"vertex",
+			"}\n",
+			"equation",
+			"}\n",
+			"equation",
+			"}\n",
+			"\\alpha",
+			"\\bar{\\alpha }",
+			"",
+			"\\none[\\vdots]",
+			"\\none[\\ldots]",
+			"$\\vdots$",
+			"\\Producer",
+			"\\Consumer"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 286.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"output.scope_viewer":
+	{
+		"height": 40.0
+	},
+	"project": "matecon.sublime-project",
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"post",
+				"_layouts/post.html"
+			],
+			[
+				"programm",
+				"_posts/blog/2015-05-16-wolfram-mathemtica-for-economists-tutorial-functional-programming.markdown"
+			],
+			[
+				"recu",
+				"_posts/blog/2015-05-16-wolfram-mathemtica-for-economists-tutorial-recursion.markdown"
+			],
+			[
+				"cus",
+				"_sass/_customlv.scss"
+			],
+			[
+				"tutor",
+				"_posts/blog/2015-05-16-mathematica-tutorial.markdown"
+			],
+			[
+				"part2",
+				"_posts/blog/2015-05-16-wolfram-mathemtica-for-economists-tutorial-part-2.markdown"
+			],
+			[
+				"pre",
+				"tex/preamble.tex"
+			],
+			[
+				"publi",
+				"_layouts/pubblication.html"
+			],
+			[
+				"page",
+				"_layouts/page.html"
+			],
+			[
+				"bout",
+				"about.md"
+			],
+			[
+				"defa",
+				"_layouts/default.html"
+			],
+			[
+				"config",
+				"_config.yml"
+			],
+			[
+				"confi",
+				"_config.yml"
+			],
+			[
+				"about",
+				"about.md"
+			],
+			[
+				"hello",
+				"_posts/2014-3-3-Hello-World.md"
+			],
+			[
+				"c8",
+				"cv_8.tex"
+			],
+			[
+				"iee",
+				"propIEEE.tex"
+			],
+			[
+				"phd",
+				"PhdProposal.bib"
+			],
+			[
+				"propbib",
+				"PhdProposal.bib"
+			],
+			[
+				"appe",
+				"tex/presentation/appendix.tex"
+			],
+			[
+				"pream",
+				"tex/preamble.tex"
+			],
+			[
+				"2n",
+				"tex/_img/2Nexample.tikz"
+			],
+			[
+				"prese",
+				"tex/presentation.tex"
+			],
+			[
+				"sum",
+				"tex/Appendix/summaryTable.tex"
+			],
+			[
+				"app",
+				"tex/Appendix/appendix.tex"
+			],
+			[
+				"apped",
+				"tex/presentation/appendix.tex"
+			],
+			[
+				"introd",
+				"tex/beamer/introduction.tex"
+			],
+			[
+				"phase",
+				"tex/ch_Evolution/phase1.tex"
+			],
+			[
+				"presen",
+				"tex/presentation.tex"
+			],
+			[
+				"summ",
+				"tex/Summary.tex"
+			],
+			[
+				"r",
+				"tex/root.tex"
+			],
+			[
+				"akno",
+				"FrontBackMatter/Acknowledgements.tex"
+			],
+			[
+				"ackno",
+				"FrontBackMatter/Acknowledgements.tex"
+			],
+			[
+				"root",
+				"tex/root.tex"
+			],
+			[
+				"utili",
+				"tex/ch_model/utilityFunctionCES.tex"
+			],
+			[
+				"reser",
+				"tex/ch_Introduction/ResearchQuestion.tex"
+			],
+			[
+				"intro",
+				"tex/ch_Introduction/chIntroduction.tex"
+			],
+			[
+				"sett",
+				"Settings/arsclassica-settings.tex"
+			],
+			[
+				"prem",
+				"tex/preamble.tex"
+			],
+			[
+				"experimen",
+				"tex/_img/tables/experiment33.tex"
+			],
+			[
+				"1-1",
+				"tex/_img/Experiments/experiment1-1.tikz"
+			],
+			[
+				"1-3",
+				"tex/_img/Experiments/experiment1-3.tikz"
+			],
+			[
+				"exper",
+				"tex/_img/Experiments/experiment1-1.tikz"
+			],
+			[
+				"experim",
+				"tex/_img/Experiments/experiment1-1.tikz"
+			],
+			[
+				"roo",
+				"tex/root.tex"
+			],
+			[
+				"oop",
+				"tex/ch_model/Model_OOP.tex"
+			],
+			[
+				"model",
+				"tex/ch_model/Model_intro.tex"
+			],
+			[
+				"individ",
+				"tex/_img/location/individualDemandSupply.tikz"
+			],
+			[
+				"indivi",
+				"tex/_img/location/individualDemandSupply.ptex"
+			],
+			[
+				"gener",
+				"tex/ch_Literature/GeneralCh2.tex"
+			],
+			[
+				"clear",
+				"tex/ch_Literature/chLiterature.tex"
+			],
+			[
+				"2ne",
+				"tex/_img/2Nexample.tikz"
+			],
+			[
+				"ch2",
+				"tex/ch_Literature/GeneralCh2.tex"
+			],
+			[
+				"tikx",
+				"tex/_img/2Nexample.tikz"
+			],
+			[
+				"tilz",
+				"tex/_img/Explanations/ex33-realwagedecay-3_5.tikz"
+			],
+			[
+				"chp",
+				"tex/ch_model/chPresentation.tex"
+			],
+			[
+				"method",
+				"tex/ch_Introduction/methodology.tex"
+			],
+			[
+				"gerne",
+				"tex/ch_Literature/GeneralCh2.tex"
+			],
+			[
+				"resul",
+				"tex/Appendix/Experimental_results.tex"
+			],
+			[
+				"liter",
+				"tex/ch_Literature/chLiterature.tex"
+			],
+			[
+				"all",
+				"tex/ch_Experiments/ex_all_agents_identical.tex"
+			],
+			[
+				"expre",
+				"tex/ch_Experiments/chExperiments.tex"
+			],
+			[
+				"unem",
+				"tex/ch_model/unemploymentIndices.tex"
+			],
+			[
+				"sca",
+				"tex/_img/Experiments/scatter38.tikz"
+			],
+			[
+				"37",
+				"tex/_img/Experiments/hist37.tikz"
+			],
+			[
+				"hist",
+				"tex/_img/Experiments/hist36.tikz"
+			],
+			[
+				"dat",
+				"tex/_img/Experiments/indices36.dat"
+			],
+			[
+				"36",
+				"tex/_img/Experiments/hist36.tikz"
+			],
+			[
+				"his",
+				"tex/_img/Experiments/hist36.tex"
+			],
+			[
+				"tikz",
+				"tex/_img/Experiments/rand34scatter.tikz"
+			],
+			[
+				"35ti",
+				"tex/_img/Experiments/rand35scatter.tikz"
+			],
+			[
+				"33",
+				"tex/_img/Experiments/avb33-Index1.tikz"
+			],
+			[
+				"allt",
+				"tex/ch_Experiments/ex_all_agents_identical.tex"
+			],
+			[
+				"35",
+				"tex/_img/tables/experiment35.tex"
+			],
+			[
+				"34",
+				"tex/_img/tables/experiment34.tex"
+			],
+			[
+				"content",
+				"FrontBackMatter/Contents.tex"
+			],
+			[
+				"experime",
+				"tex/_img/Experiments/experiment1-3.tikz"
+			],
+			[
+				"experiment",
+				"tex/_img/Experiments/experiment1-3.tikz"
+			],
+			[
+				"pra",
+				"tex/preamble.tex"
+			],
+			[
+				"append",
+				"tex/Appendix/appendix.tex"
+			],
+			[
+				"metho",
+				"tex/ch_Introduction/methodology.tex"
+			],
+			[
+				"prea",
+				"tex/preamble.tex"
+			],
+			[
+				"rot",
+				"notes/root.tex"
+			],
+			[
+				"real",
+				"tex/_img/RealVsExpectedDemand.tikz"
+			],
+			[
+				"heat",
+				"tex/_img/Heatmap.tikz"
+			],
+			[
+				"pri",
+				"tex/_img/PriceExpectatioP.tikz"
+			],
+			[
+				"test",
+				"tex/_img/testPic.tikz"
+			],
+			[
+				"fra",
+				"tex/_img/Framework.tikz"
+			],
+			[
+				"frame",
+				"tex/_img/Framework.tikz"
+			],
+			[
+				"pr",
+				"tex/ch_model/PriceSetting.tex"
+			],
+			[
+				"rice",
+				"tex/ch_model/PriceSetting.tex"
+			],
+			[
+				"util",
+				"tex/ch_model/utilityFunction.tex"
+			],
+			[
+				"",
+				"doc/doc.tex"
+			],
+			[
+				"alg",
+				"tex/ch_Evolution/algPhase2.tex"
+			],
+			[
+				"eremo",
+				"tex/Remote.bib"
+			],
+			[
+				"title",
+				"FrontBackMatter/Titlepage.tex"
+			],
+			[
+				"4",
+				"tex/ch_Evolution/phase4.tex"
+			],
+			[
+				"phas",
+				"tex/ch_Evolution/phase5.tex"
+			],
+			[
+				"evo",
+				"tex/ch_Evolution/chEvolution.tex"
+			],
+			[
+				"goo",
+				"notes/GOOD IDEAS.md"
+			],
+			[
+				"phs",
+				"tex/ch_Evolution/phase2.tex"
+			],
+			[
+				"zam",
+				"tex/zamb_notes.tex"
+			],
+			[
+				"price",
+				"tex/PriceSetting.tex"
+			],
+			[
+				"csv",
+				"tex/_img/StockVsCA.csv"
+			],
+			[
+				"good",
+				"notes/GOOD IDEAS.md"
+			],
+			[
+				"evolu",
+				"tex/chEvolution.tex"
+			],
+			[
+				"dema",
+				"tex/demandFunction.tex"
+			],
+			[
+				"code",
+				"tex/app_code.tex"
+			],
+			[
+				"ars",
+				"Settings/arsclassica-settings.tex"
+			],
+			[
+				"present",
+				"tex/chPresentation.tex"
+			],
+			[
+				"ch",
+				"tex/chModel_intro.tex"
+			],
+			[
+				"wo",
+				"tex/world.tikz"
+			],
+			[
+				"matrx",
+				"tex/_img/augmentedNMatrix.tex"
+			],
+			[
+				"demand",
+				"tex/_img/demandAndSupply2.eps"
+			],
+			[
+				"tex",
+				"tex/phase1.tex"
+			],
+			[
+				"word",
+				"tex/world.tikz"
+			],
+			[
+				"cho",
+				"tex/chModel_offer.tex"
+			],
+			[
+				"intr",
+				"tex/chModel_intro.tex"
+			],
+			[
+				"rules",
+				"tex/chModel_rules.tex"
+			],
+			[
+				"rul",
+				"tex/chModel_rules.tex"
+			],
+			[
+				"offer",
+				"tex/chModel_offer.tex"
+			],
+			[
+				"chmode",
+				"tex/chModel_rules.tex"
+			],
+			[
+				"glos",
+				"tex/glossaries.tex"
+			],
+			[
+				"basi",
+				"tex/BasicModel.tex"
+			],
+			[
+				"settin",
+				"Settings/arsclassica-settings.tex"
+			],
+			[
+				"bib",
+				"Review/LaTeXing/Remote.bib"
+			],
+			[
+				"stdrad",
+				"JavaStd/StdRandom.java"
+			],
+			[
+				"koch",
+				"OOP/Koch.java"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Dropbox/CODING/nodejs/NodeJS.sublime-project"
+			],
+			[
+				"sca",
+				"~/Dropbox/CODING/Scala/scala.sublime-project"
+			],
+			[
+				"java",
+				"~/Dropbox/CODING/Java/OOP/JavaOOP.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 147.0,
+		"selected_items":
+		[
+			[
+				"",
+				"show"
+			]
+		],
+		"width": 279.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

@@ -1,9 +1,9 @@
 # Site wide configuration
 
-title: MatEcon
+title: 
 locale: en_US
 description: Bits and pieces from a Maths and Econ Geek
-logo: 
+logo: LucaASCII.svg
 url: 
 
 # Jekyll configuration
