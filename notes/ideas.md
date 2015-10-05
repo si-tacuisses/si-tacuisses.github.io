@@ -1,4 +1,4 @@
-Ideas for tutorials
+# Ideas for tutorials
 
 - Network analysis 
 - Lorenz Curve with cities
@@ -8,4 +8,3 @@ Ideas for tutorials
 - Game of Life
 - Regression
 - High Quality Figures
-- 
