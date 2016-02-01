@@ -7,4 +7,4 @@ image:
   feature: whalepetunias.jpg
 ---
 
-I am currently doing my PhD in Economics, Management and Datascience at IMT Lucca. My research interesets are among other things Complex Network analysis, Big Data, Macroeconometrics and the Machine Learning. I am passioned about data in all its forms and constantly looking for curious and ingenious ways to visualize, collect and extract value from data. If any of this sounds interesting to you then be sure to check out some of my posts.
+I am currently doing my PhD in Economics, Management and Data Science at [IMT Lucca](https://www.imtlucca.it/). My research interests are among (a lot of other things) Complex Network, Big Data, Macro econometrics and the Machine Learning. I am pensioned about data in all it's forms and constantly looking for curious and ingenious ways to visualize, collect and extract value from data. If any of this sounds interesting to you then be sure to check out some of my posts.
