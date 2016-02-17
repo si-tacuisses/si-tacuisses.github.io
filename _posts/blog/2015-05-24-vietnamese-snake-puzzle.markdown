@@ -3,7 +3,7 @@ layout: post
 title: "Vietnamese Snake Puzzle"
 modified:
 categories: blog
-excerpt:
+excerpt: "The Vietnamese Snake Puzzle, a short bruteforce solution with Mathematica."
 tags: [puzzle, mathematica]
 image:
   feature:
