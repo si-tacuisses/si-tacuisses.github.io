@@ -11,7 +11,7 @@ image:
   creditlink:
 date: 2015-05-24T17:18:37+02:00
 math: true
-code: true
+mma: true
 ---
 
 

@@ -11,7 +11,8 @@ date: 2015-05-16T10:41:03+02:00
 comments: true
 share: true
 math: true
-code: true
+code: false
+mma: true
 ---
 
 

@@ -9,4 +9,7 @@ image:
   feature:
   credit:
   creditlink:
+math: true
+mma: false
+code: false
 ---
