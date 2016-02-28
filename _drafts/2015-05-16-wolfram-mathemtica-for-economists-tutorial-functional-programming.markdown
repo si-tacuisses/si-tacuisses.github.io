@@ -3,7 +3,7 @@ layout: post
 title: "Wolfram Mathemtica for Economists - Tutorial - Functional Programming"
 modified:
 categories: blog
-excerpt:
+excerpt: No excerpt yet
 tags: []
 image:
   feature:
