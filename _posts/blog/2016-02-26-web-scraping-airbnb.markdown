@@ -19,23 +19,21 @@ The web is full of wonderful and freely available information. Some of it is rea
 Some of this wealth of data I am speaking about is publicly available and comes from state of the art databases, but there is no easy way to access it, such as airbnb.com. 
 The listings on the Airbnb are freely accessible to anyone who takes the time to brows their really nice portal, but if we wanted to do some statistical analysis then there is no easy way to get complete and sufficiently large datasets. This is where [web scraping](https://en.wikipedia.org/wiki/Web_scraping) comes in.
 
-I have always had some questions I wanted ask airbnb, for example how many of their listings are there in my city (if you check a simple search will never list more than 300 results at a time)? What is the average price? Do lots of people leave reviews? Is it true that most reviews are positive? and so many more. I am sure that you can come up with your own set of questions you would like to tickle out of such data.
+I have always had some questions I wanted to ask airbnb, for example:
 
-So here I walk you through how to get *some* of the data, to answer some of these questions.
+* How many of their listings are there in my city (if you check a simple search will never list more than 300 results at a time)? 
+* What is the average price? 
+* Do lots of people leave reviews? 
+* Is it true that most reviews are positive? and so many more. 
+
+I am sure that you can come up with your own set of questions you would like to tickle out of such data. So here I walk you through how to get *some* of the data, to answer some of these questions.
 
 * Table of Contents
 {:toc}
 
 ## The Plan
 
-To do some data science on Airbnb data, we need a few things:
-
-- A web scraping framework to get the data
-- A Database to put this data into
-- A server (could be your laptop)
-- A statistics package to evaluate, estimate and explore the data.
-
-First we are going to set up the environment to get [scrapy](scrapy.org) to work, then write some python code to get our spider to do the tedious task of scraping for us. After the all is said and done we are going to do some exploratory analysis with the data.
+First we are going to set up the environment to get [scrapy](scrapy.org) to work, then write some python code to get our spider to do the tedious task of scraping for us. After the all is said and done we are going look at some exploratory analysis of the data we got.
 
 Sounds good?
 Here we go!
