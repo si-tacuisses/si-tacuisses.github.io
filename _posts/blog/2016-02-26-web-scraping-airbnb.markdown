@@ -7,7 +7,7 @@ excerpt: "Getting data from Airbnb and do some interesting analysis"
 tags: [tutorial, python, webscraping]
 image:
   feature: luccaairbnbmap.png
-date: 2016-03-01
+date: 2016-02-26
 comments: true
 share: true
 math: false
