@@ -35,9 +35,6 @@ I am sure that you can come up with your own set of questions you would like to 
 
 First we are going to set up the environment to get [scrapy](scrapy.org) to work, then write some python code to get our spider to do the tedious task of scraping for us. After the all is said and done we are going look at some exploratory analysis of the data we got.
 
-Sounds good?
-Here we go!
-
 ## Setting up the system
 
 I assume here that you have some basic python programming skills and are not intimidate by the command line. 
@@ -52,7 +49,6 @@ $ scrapy shell http://www.google.com
 ```
 
 If this does not result in any errors and you are in the `scrapy shell` then you are up and running.
-
 Now we set up our project, the scrapy cli command fortunately creates the basic scaffolding. Navigate in the terminal where you want to save your project, and execute the following commands.
 
 ```bash
