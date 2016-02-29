@@ -27,7 +27,7 @@ Before I move on to present a brute-force method to enumerate all possible solut
 Ready?
 
 Now that you had a go at it and probably came up with a solution or possibly all solutions. I present a brute-force solution for Mathematica.
-I assume here that you now the basics of the [Wolfram Language]({% post_url /blog/2015-05-16-mathematica-tutorial %}), however I present my solution approach step by step in a tutorial style.
+I assume here that you now the basics of the [Wolfram Language]({% post_url 2015-05-16-mathematica-tutorial %}), however I present my solution approach step by step in a tutorial style.
 
 The above snake can be rewritten as an equation where the blanks are substituted with variables. Here I choose to name them \\( \{a,b,...,i \}\\) and obtain \\eqref{eq:1}.
 
