@@ -15,53 +15,55 @@ code: true
 mma: false
 ---
 
-The web is full of wonderful and freely available information. Some of it is readily available and neatly organized (see [this repo](https://github.com/caesar0301/awesome-public-datasets)) and some data which is _really_ interesting is hiding in plain sight. I am speaking about unstructured data on websites, which has either never been organized or the owner does not offer easy access and thus sits there locked away in dusty HTML files.
+The web is full of wonderful and freely available information. Some of it is readily available and neatly organized (see [this repo](https://github.com/caesar0301/awesome-public-datasets)) and some of it is hiding in plain sight. I am speaking about unstructured data on websites, which has either never been organized or the owner does not offer easy access and thus sits there locked away in dusty HTML files.
 Some of this wealth of data I am speaking about is publicly available and comes from state of the art databases, but there is no easy way to access it, such as airbnb.com. 
-The listings on the Airbnb are freely accessible to anyone who takes the time to brows their really nice portal, but if we wanted to do some statistical analysis then there is no easy way to get complete and sufficiently large datasets. This is where [web scraping](https://en.wikipedia.org/wiki/Web_scraping) comes in.
+The listings on the Airbnb are freely accessible to anyone who cares to brows their really nice portal, but if we wanted to do some exploratory statistical analysis then there is no easy way to get a complete and sufficiently large dataset. This is where [web scraping](https://en.wikipedia.org/wiki/Web_scraping) comes in.
 
 I have always had some questions I wanted to ask airbnb, for example:
 
-* How many of their listings are there in my city (if you check a simple search will never list more than 300 results at a time)? 
-* What is the average price? 
+* How many of their listings are there in my city? (if you check a simple search will never list more than 300 results at a time) 
+* What is the price distribution? 
 * Do lots of people leave reviews? 
-* Is it true that most reviews are positive? and so many more. 
+* Is it true that most reviews are positive?
 
-I am sure that you can come up with your own set of questions you would like to tickle out of such data. So here I walk you through how to get *some* of the data, to answer some of these questions.
+I am sure that you can come up with your own set of questions you would like to tickle out of such data. So here I walk you through how to get *some* of the data, to answer *some* of these questions.
+
+You can find the complete code [here as github repo](https://github.com/si-tacuisses/bnb_scrapy_tutorial), feel free to fork, clone or do whatever you want with it.
 
 * Table of Contents
 {:toc}
 
 ## The Plan
 
-First we are going to set up the environment to get [scrapy](scrapy.org) to work, then write some python code to get our spider to do the tedious task of scraping for us. After the all is said and done we are going look at some exploratory analysis of the data we got.
+First we are going to set up the environment to get [scrapy](scrapy.org) to work, then write some python code to get our spider to do the tedious task of scraping and after the all is said and done we are going look explore our hard won dataset.
 
 ## Setting up the system
 
-I assume here that you have some basic python programming skills and are not intimidate by the command line. 
-We are going to use the python scraping library [scrapy](scrapy.org) to do the heavy lifting of routing, scheduling and processing requests.
+I assume that you have some basic python programming skills and are not intimidate by the command line. We are going to use the python scraping library [scrapy](scrapy.org) to do the heavy lifting of routing, scheduling and processing requests.
 
 To install scrapy follow their setup guide for your system, note that scrapy is not compatible with python 3 so make sure that you are using 2.7. Even better if you plan on doing more work in python, and trust me you will, then you should install the great scientific python bundle [Anaconda](https://www.continuum.io/).
 
-Once you are set up, it is time to test drive scrapy. Open a terminal and type (note the `$` is not part of the code).
+Once you are set up, it is time to test drive scrapy. Open a terminal and type:
 
 ```bash
 $ scrapy shell http://www.google.com
 ```
 
 If this does not result in any errors and you are in the `scrapy shell` then you are up and running.
-Now we set up our project, the scrapy cli command fortunately creates the basic scaffolding. Navigate in the terminal where you want to save your project, and execute the following commands.
+Now we set up our project, the scrapy cli interface fortunately creates the basic scaffolding. Navigate using the terminal where you want to save your project, and execute the following commands.
 
 ```bash
+$ cd /path/to/your/location
 $ scrapy startproject bnbtutorial # generate the scrapy scaffolding
 $ cd bnbtutorial # change into directory
 $ scrapy genspider bnbspider airbnb.com # generate a base spider
 ```
 
-This is the basic setup in the next section we will write the logic of the spider and define what we want it to return.
+This is the basic setup in the next section we will write the logic of the spider and define what we want it to scrape.
 
 ## Getting started with Scrapy
 
-Your project folder should now look like this.
+Your project folder should look like this:
 
 ```
 .
@@ -94,7 +96,7 @@ class BnbspiderSpider(scrapy.Spider):
         pass
 ```
 
-Your code will look like this. Every spider class needs to implement the method `parse` which takes as argument a http response object from the page(s) found in `start_urls`, which we are going to process further. Before we go into the actual data extraction phase we need to get a information from a potential results page from airbnb. If we run a query and obtain a list of results we want to know how many page of results there are, to do this we add the following method to our `BnbspiderSpider` class.
+Your code will look like this. Every spider class needs to implement the method `parse` which takes as argument a http response object from the page(s) found in `start_urls`, which we are going to process further. Before we go into the actual data extraction phase we need to get some information from a potential results page. If we run a query and obtain a list of results we want to know how many pages there are. To do this, we add the following method to our `BnbspiderSpider` class.
 
 ```python
 def last_pagenumer_in_search(self, response):
@@ -121,7 +123,7 @@ def last_pagenumer_in_search(self, response):
 
 This function extracts from a results page the last page number using `xpath` queries. If you are not familiar with `xpath`, look at the [w3 tutorial](http://www.w3schools.com/xsl/xpath_intro.asp).
 
-With this information we can the create a list of pages using the following format to go from one page to the next.
+With this information we can then create a list of pages using the following format to go from one page to the next.
 
 ```
 https://www.airbnb.com/s/Lucca--Italy?page=<page_number>
@@ -131,19 +133,22 @@ Add the following lines to `bnbspider.py`
 
 ```python
 def parse(self, response):
-        last_page_number = self.last_pagenumer_in_search(response)
-        if last_page_number < 1:
-            return
-        else:
-            page_urls = [response.url + "?page=" + str(pageNumber)
-                     for pageNumber in range(1, last_page_number + 1)]
-            for page_url in page_urls:
-                yield scrapy.Request(page_url, 
-                                    callback=self.parse_listing_results_page)
+    # ge the last page number on the page
+    last_page_number = self.last_pagenumer_in_search(response)
+    if last_page_number < 1:
+        # abort the search if there are no results
+        return
+    else:
+        # otherwise loop over all pages and scrape!
+        page_urls = [response.url + "?page=" + str(pageNumber)
+                 for pageNumber in range(1, last_page_number + 1)]
+        for page_url in page_urls:
+            yield scrapy.Request(page_url, 
+                                callback=self.parse_listing_results_page)
 ```
 
 
-Before we can move to the data extraction phase to get data from the individual listings we need to get the unique url for the listing from the page using the following method.
+Before we can move to the data extraction phase, we need to get the unique listings url from the results page using the following method.
 
 ```python
 def parse_listing_results_page(self, response):
@@ -154,9 +159,8 @@ def parse_listing_results_page(self, response):
         yield scrapy.Request(url, callback=self.parse_listing_contents)
 ```
 
-Now to the interesting part, extracting the data. I have done most of the work here in writing the `xpath`s to extract some of the data from the page, but you can extend on this. The scrapy documentation has a nice primer on how to use the developer tools found in Firefox/Chrome and any other browser to create `xpath` expressions.
-
-The following function extracts the data and stores it in a scrapy object.
+Now to the interesting part, extracting the data. I have writte the `xpath` to extract some of the data from the page which in this case is hidden in a `json`file. This is a minimal example and there is a lot more information, to get (i.e. geographic coordinates). The scrapy documentation has a nice primer on how to use the developer tools found in Firefox/Chrome to create `xpath` expressions and some other general tips.
+Thi is the centrepiece of the class, the function which extracts the data and stores it in a scrapy object, which we are going to define shortely.
 
 ```python
 def parse_listing_contents(self, response):
@@ -190,9 +194,7 @@ def parse_listing_contents(self, response):
 
 note that this function uses the `json` library so be sure to import it `import json`.
 
-Now to the last step, we need to define a `scrapy.Item` class,
-to store the scraped info to.
-Open the file `items.py` and create all the fields which we are going to need.
+Now to the last step, we need to define a `scrapy.Item` class, to store the scraped info to. Open the file `items.py` and create all the fields which we are going to need.
 
 ```python
 import scrapy
@@ -220,7 +222,7 @@ class BnbtutorialItem(scrapy.Item):
 ```
 
 
-Be sure that you import `BnbtutorialItem` in the `BnbSpider`, by adding `from bnbtutorial.items import BnbtutorialItem` to the top of of the `bnbspider.py` file, as well as adding to the function `parse_listing_contents` at the beginning `item = BnbtutorialItem()`, and the spider script should look now like this,
+Be sure to import `BnbtutorialItem` in the `BnbSpider`, by adding `from bnbtutorial.items import BnbtutorialItem` to the top of of the `bnbspider.py` file, as well as adding to the function `parse_listing_contents` at the beginning `item = BnbtutorialItem()`. After these changes the spider script should look something like this,
 
 ```python
 # -*- coding: utf-8 -*-
@@ -242,12 +244,10 @@ class BnbSpider(scrapy.Spider):
 # REST OF FILE AS BEFORE 
 ```
 
-You can find the code [here as github repo](https://github.com/si-tacuisses/bnb_scrapy_tutorial), feel free to fork, clone or do whatever you want with it.
-
 
 ## Run the Query
 
-As good netizens there are a few things we need to keep in mind when scraping a website. As far I know there it isn't illegal to scrap a website, starting a [DDoS](https://en.wikipedia.org/wiki/Denial-of-service_attack) attack on the other hand is, so to avoid any ambiguity in what we are doing, you should throttle the speed at which you scrape. For Airbnb I have found that it is best not to go above the limit of 8 pages per minute, or your IP will be banned. To enable the throttling in scrapy you need to uncomment the following lines in `settings.py`
+As good netizens there are a few things we need to keep in mind when scraping a website. As far I know it isn't illegal to scrap a website, starting a [DDoS](https://en.wikipedia.org/wiki/Denial-of-service_attack) attack on the other hand is, so to avoid any ambiguity in what you are doing, you should throttle the speed at which you scrape. For Airbnb I have found that it is best not to go above the limit of 8 pages per minute, or your IP will be banned.  To enable the throttling in scrapy you need to uncomment the following lines in `settings.py` . If you need more speed, you might want to look into renting some amazon AWS machines (micro instances are pretty cheap).
 
 ```python
 USER_AGENT = 'bnbtutorial (+http://www.yourdomain.com)'
@@ -272,11 +272,10 @@ As I have already anticipated earlier this is a very basic spider to crawl airbn
 
 ## Plot the Data on a Map
 
-The listings contain also longitude and latitude information, with which you can use to visualize your data on a nice map.
-I will follow this post up on how to use [qgis](http://www.qgis.org/en/site/) to plot geospatial data, untill then this is the plotted result for the query I have run with the above (slightly modified) script.
+The listings contain also longitude and latitude information (which we did not get here, but you can get it easily if you have a look at the `head` of any listings page).
+We can use this data to visualize the distribution and concentration of properties on a map.
 
-
-![cobbDouglas]({{ site.baseurl }}/images/luccaairbnbmap.png "Airbnb properties in Lucca")
+![Airbnb Properties in Lucca and their Concentration]({{ site.baseurl }}/images/luccaairbnbmap.png "Airbnb properties in Lucca")
 
 
 
