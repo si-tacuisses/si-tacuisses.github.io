@@ -35,7 +35,7 @@ You can find the complete code [here as github repo](https://github.com/si-tacui
 
 ## The Plan
 
-First we are going to set up the environment to get [scrapy](scrapy.org) to work, then write some python code to get our spider to do the tedious task of scraping and after the all is said and done we are going look explore our hard won dataset.
+First we are going to set up the environment to get [scrapy](scrapy.org) to work, then write some python code to get our spider to do the tedious task of scraping and after all is said and done we are going explore our hard won dataset.
 
 ## Setting up the system
 
@@ -267,7 +267,7 @@ And now for the main event, running the spider and see how it all works (hopeful
 $ scrapy crawl bnbspider -o LuccaAirbnb.csv
 ```
 
-As I have already anticipated earlier this is a very basic spider to crawl airbnb. You will see that it will never return more than 300 results and that some will be duplicates. It is then left to you to find ways to circumvent this limit and avoid calls to urls that have already been scraped (hint: use filters to fine-grain your queries and look at the scrapy documentation on how to avoid duplicate requests.)
+As I have already anticipated earlier this is a very basic spider to crawl airbnb. You will see that it will never return more than 300 results at a time and that some records will be duplicates. It is then left to you to find ways to circumvent this limit and avoid calls to urls that have already been scraped (hint: use filters to fine-grain your queries and look at the scrapy documentation on how to avoid duplicate requests.)
 
 
 ## Plot the Data on a Map
