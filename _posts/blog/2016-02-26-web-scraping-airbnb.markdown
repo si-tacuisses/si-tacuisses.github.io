@@ -247,6 +247,8 @@ class BnbSpider(scrapy.Spider):
 
 ## Run the Query
 
+Now to run your own query for your city simply edit the variable `QUERY` at the top of the script, which takes most often the following form `City--Country` a quick check by running the query on airbnb will reveal.
+
 As good netizens there are a few things we need to keep in mind when scraping a website. As far I know it isn't illegal to scrap a website, starting a [DDoS](https://en.wikipedia.org/wiki/Denial-of-service_attack) attack on the other hand is, so to avoid any ambiguity in what you are doing, you should throttle the speed at which you scrape. For Airbnb I have found that it is best not to go above the limit of 8 pages per minute, or your IP will be banned.  To enable the throttling in scrapy you need to uncomment the following lines in `settings.py` . If you need more speed, you might want to look into renting some amazon AWS machines (micro instances are pretty cheap).
 
 ```python
@@ -277,6 +279,9 @@ We can use this data to visualize the distribution and concentration of properti
 
 ![Airbnb Properties in Lucca and their Concentration]({{ site.baseurl }}/images/luccaairbnbmap.png "Airbnb properties in Lucca")
 
+## Edit
+
+- added instructions on how to change city in the query
 
 
 
