@@ -281,7 +281,7 @@ We can use this data to visualize the distribution and concentration of properti
 
 ## Edit
 
-- added instructions on how to change city in the query
+- added instructions on how to change city in the query 
 
 
 
