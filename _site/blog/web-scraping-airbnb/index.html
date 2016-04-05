@@ -165,7 +165,9 @@
 <!-- /.google-ads --> <!-- /.google-ads -->
       </footer>
       <div class="entry-content">
-        <p>The web is full of wonderful and freely available information. Some of it is readily available and neatly organized (see <a href="https://github.com/caesar0301/awesome-public-datasets">this repo</a>) and some of it is hiding in plain sight. I am speaking about unstructured data on websites, which has either never been organized or the owner does not offer easy access and thus sits there locked away in dusty HTML files.
+        <p>test</p>
+
+<p>The web is full of wonderful and freely available information. Some of it is readily available and neatly organized (see <a href="https://github.com/caesar0301/awesome-public-datasets">this repo</a>) and some of it is hiding in plain sight. I am speaking about unstructured data on websites, which has either never been organized or the owner does not offer easy access and thus sits there locked away in dusty HTML files.
 Some of this wealth of data I am speaking about is publicly available and comes from state of the art databases, but there is no easy way to access it, such as airbnb.com. 
 The listings on the Airbnb are freely accessible to anyone who cares to brows their really nice portal, but if we wanted to do some exploratory statistical analysis then there is no easy way to get a complete and sufficiently large dataset. This is where <a href="https://en.wikipedia.org/wiki/Web_scraping">web scraping</a> comes in.</p>
 
@@ -188,19 +190,12 @@ The listings on the Airbnb are freely accessible to anyone who cares to brows th
   <li><a href="#getting-started-with-scrapy" id="markdown-toc-getting-started-with-scrapy">Getting started with Scrapy</a></li>
   <li><a href="#run-the-query" id="markdown-toc-run-the-query">Run the Query</a></li>
   <li><a href="#plot-the-data-on-a-map" id="markdown-toc-plot-the-data-on-a-map">Plot the Data on a Map</a></li>
-<<<<<<< HEAD
   <li><a href="#edit" id="markdown-toc-edit">Edit</a></li>
-=======
->>>>>>> 5bee713d755c73e046da353f018262e0bb4aa308
 </ul>
 
 <h2 id="the-plan">The Plan</h2>
 
-<<<<<<< HEAD
-<p>First we are going to set up the environment to get <a href="scrapy.org">scrapy</a> to work, then write some python code to get our spider to do the tedious task of scraping and after the all is said and done we are going look explore our hard won dataset.</p>
-=======
 <p>First we are going to set up the environment to get <a href="scrapy.org">scrapy</a> to work, then write some python code to get our spider to do the tedious task of scraping and after all is said and done we are going explore our hard won dataset.</p>
->>>>>>> 5bee713d755c73e046da353f018262e0bb4aa308
 
 <h2 id="setting-up-the-system">Setting up the system</h2>
 
@@ -409,11 +404,8 @@ Thi is the centrepiece of the class, the function which extracts the data and st
 
 <h2 id="run-the-query">Run the Query</h2>
 
-<<<<<<< HEAD
 <p>Now to run your own query for your city simply edit the variable <code class="highlighter-rouge">QUERY</code> at the top of the script, which takes most often the following form <code class="highlighter-rouge">City--Country</code> a quick check by running the query on airbnb will reveal.</p>
 
-=======
->>>>>>> 5bee713d755c73e046da353f018262e0bb4aa308
 <p>As good netizens there are a few things we need to keep in mind when scraping a website. As far I know it isn’t illegal to scrap a website, starting a <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">DDoS</a> attack on the other hand is, so to avoid any ambiguity in what you are doing, you should throttle the speed at which you scrape. For Airbnb I have found that it is best not to go above the limit of 8 pages per minute, or your IP will be banned.  To enable the throttling in scrapy you need to uncomment the following lines in <code class="highlighter-rouge">settings.py</code> . If you need more speed, you might want to look into renting some amazon AWS machines (micro instances are pretty cheap).</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="n">USER_AGENT</span> <span class="o">=</span> <span class="s">'bnbtutorial (+http://www.yourdomain.com)'</span>
@@ -434,11 +426,7 @@ Thi is the centrepiece of the class, the function which extracts the data and st
 </code></pre>
 </div>
 
-<<<<<<< HEAD
-<p>As I have already anticipated earlier this is a very basic spider to crawl airbnb. You will see that it will never return more than 300 results and that some will be duplicates. It is then left to you to find ways to circumvent this limit and avoid calls to urls that have already been scraped (hint: use filters to fine-grain your queries and look at the scrapy documentation on how to avoid duplicate requests.)</p>
-=======
 <p>As I have already anticipated earlier this is a very basic spider to crawl airbnb. You will see that it will never return more than 300 results at a time and that some records will be duplicates. It is then left to you to find ways to circumvent this limit and avoid calls to urls that have already been scraped (hint: use filters to fine-grain your queries and look at the scrapy documentation on how to avoid duplicate requests.)</p>
->>>>>>> 5bee713d755c73e046da353f018262e0bb4aa308
 
 <h2 id="plot-the-data-on-a-map">Plot the Data on a Map</h2>
 
@@ -447,15 +435,12 @@ We can use this data to visualize the distribution and concentration of properti
 
 <p><img src="/images/luccaairbnbmap.png" alt="Airbnb Properties in Lucca and their Concentration" title="Airbnb properties in Lucca" /></p>
 
-<<<<<<< HEAD
 <h2 id="edit">Edit</h2>
 
 <ul>
   <li>added instructions on how to change city in the query</li>
 </ul>
 
-=======
->>>>>>> 5bee713d755c73e046da353f018262e0bb4aa308
 
         
           <div id="disqus_thread"></div><!-- /#disqus_thread -->
