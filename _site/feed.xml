@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-04-03T11:47:16+02:00</updated>
+<updated>2016-04-05T15:11:37+02:00</updated>
 <id>/</id>
 <author>
   <name>Luca Verginer</name>
@@ -48,11 +48,12 @@ The listings on the Airbnb are freely accessible to anyone who cares to brows th
   &lt;li&gt;&lt;a href=&quot;#getting-started-with-scrapy&quot; id=&quot;markdown-toc-getting-started-with-scrapy&quot;&gt;Getting started with Scrapy&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#run-the-query&quot; id=&quot;markdown-toc-run-the-query&quot;&gt;Run the Query&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#plot-the-data-on-a-map&quot; id=&quot;markdown-toc-plot-the-data-on-a-map&quot;&gt;Plot the Data on a Map&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#edit&quot; id=&quot;markdown-toc-edit&quot;&gt;Edit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;the-plan&quot;&gt;The Plan&lt;/h2&gt;
 
-&lt;p&gt;First we are going to set up the environment to get &lt;a href=&quot;scrapy.org&quot;&gt;scrapy&lt;/a&gt; to work, then write some python code to get our spider to do the tedious task of scraping and after all is said and done we are going explore our hard won dataset.&lt;/p&gt;
+&lt;p&gt;First we are going to set up the environment to get &lt;a href=&quot;scrapy.org&quot;&gt;scrapy&lt;/a&gt; to work, then write some python code to get our spider to do the tedious task of scraping and after the all is said and done we are going look explore our hard won dataset.&lt;/p&gt;
 
 &lt;h2 id=&quot;setting-up-the-system&quot;&gt;Setting up the system&lt;/h2&gt;
 
@@ -261,6 +262,8 @@ Thi is the centrepiece of the class, the function which extracts the data and st
 
 &lt;h2 id=&quot;run-the-query&quot;&gt;Run the Query&lt;/h2&gt;
 
+&lt;p&gt;Now to run your own query for your city simply edit the variable &lt;code class=&quot;highlighter-rouge&quot;&gt;QUERY&lt;/code&gt; at the top of the script, which takes most often the following form &lt;code class=&quot;highlighter-rouge&quot;&gt;City--Country&lt;/code&gt; a quick check by running the query on airbnb will reveal.&lt;/p&gt;
+
 &lt;p&gt;As good netizens there are a few things we need to keep in mind when scraping a website. As far I know it isn’t illegal to scrap a website, starting a &lt;a href=&quot;https://en.wikipedia.org/wiki/Denial-of-service_attack&quot;&gt;DDoS&lt;/a&gt; attack on the other hand is, so to avoid any ambiguity in what you are doing, you should throttle the speed at which you scrape. For Airbnb I have found that it is best not to go above the limit of 8 pages per minute, or your IP will be banned.  To enable the throttling in scrapy you need to uncomment the following lines in &lt;code class=&quot;highlighter-rouge&quot;&gt;settings.py&lt;/code&gt; . If you need more speed, you might want to look into renting some amazon AWS machines (micro instances are pretty cheap).&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;USER_AGENT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;bnbtutorial (+http://www.yourdomain.com)&#39;&lt;/span&gt;
@@ -281,7 +284,7 @@ Thi is the centrepiece of the class, the function which extracts the data and st
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;As I have already anticipated earlier this is a very basic spider to crawl airbnb. You will see that it will never return more than 300 results at a time and that some records will be duplicates. It is then left to you to find ways to circumvent this limit and avoid calls to urls that have already been scraped (hint: use filters to fine-grain your queries and look at the scrapy documentation on how to avoid duplicate requests.)&lt;/p&gt;
+&lt;p&gt;As I have already anticipated earlier this is a very basic spider to crawl airbnb. You will see that it will never return more than 300 results and that some will be duplicates. It is then left to you to find ways to circumvent this limit and avoid calls to urls that have already been scraped (hint: use filters to fine-grain your queries and look at the scrapy documentation on how to avoid duplicate requests.)&lt;/p&gt;
 
 &lt;h2 id=&quot;plot-the-data-on-a-map&quot;&gt;Plot the Data on a Map&lt;/h2&gt;
 
@@ -289,6 +292,12 @@ Thi is the centrepiece of the class, the function which extracts the data and st
 We can use this data to visualize the distribution and concentration of properties on a map.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/luccaairbnbmap.png&quot; alt=&quot;Airbnb Properties in Lucca and their Concentration&quot; title=&quot;Airbnb properties in Lucca&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;edit&quot;&gt;Edit&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;added instructions on how to change city in the query&lt;/li&gt;
+&lt;/ul&gt;
 
 
     &lt;p&gt;&lt;a href=&quot;/blog/web-scraping-airbnb/&quot;&gt;Webscraping Airbnb with scrapy&lt;/a&gt; was originally published by Luca Verginer at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on February 26, 2016.&lt;/p&gt;
