@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-04-05T15:40:32+02:00</updated>
+<updated>2016-04-05T15:55:49+02:00</updated>
 <id>/</id>
 <author>
   <name>Luca Verginer</name>
@@ -25,9 +25,7 @@
     <email>luca.v@verginer.eu</email>
   </author>
   <content type="html">
-    &lt;p&gt;test&lt;/p&gt;
-
-&lt;p&gt;The web is full of wonderful and freely available information. Some of it is readily available and neatly organized (see &lt;a href=&quot;https://github.com/caesar0301/awesome-public-datasets&quot;&gt;this repo&lt;/a&gt;) and some of it is hiding in plain sight. I am speaking about unstructured data on websites, which has either never been organized or the owner does not offer easy access and thus sits there locked away in dusty HTML files.
+    &lt;p&gt;The web is full of wonderful and freely available information. Some of it is readily available and neatly organized (see &lt;a href=&quot;https://github.com/caesar0301/awesome-public-datasets&quot;&gt;this repo&lt;/a&gt;) and some of it is hiding in plain sight. I am speaking about unstructured data on websites, which has either never been organized or the owner does not offer easy access and thus sits there locked away in dusty HTML files.
 Some of this wealth of data I am speaking about is publicly available and comes from state of the art databases, but there is no easy way to access it, such as airbnb.com. 
 The listings on the Airbnb are freely accessible to anyone who cares to brows their really nice portal, but if we wanted to do some exploratory statistical analysis then there is no easy way to get a complete and sufficiently large dataset. This is where &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_scraping&quot;&gt;web scraping&lt;/a&gt; comes in.&lt;/p&gt;
 
