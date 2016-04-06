@@ -9,3 +9,5 @@ package.jsonmatecon.sublime-project
 matecon.sublime-workspace
 notes/ideas.md
 notes/notepad.md
+_site
+.idea

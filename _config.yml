@@ -8,6 +8,10 @@ url:
 
 # Jekyll configuration
 
+collections:
+- slides
+
+
 permalink:   /:categories/:title/
 markdown:    kramdown
 
