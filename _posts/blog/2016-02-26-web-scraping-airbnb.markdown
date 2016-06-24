@@ -152,7 +152,7 @@ Before we can move to the data extraction phase, we need to get the unique listi
 
 ```python
 def parse_listing_results_page(self, response):
-    for href in response.xpath('//div[@class="listing"]/@data-url').extract():
+    for href in response.xpath('//a[@class="media-photo media-cover"]/@href').extract():
         # get all href of the speficied kind and join them to be a valid url
         url = response.urljoin(href)
         # request the url and pass the response to final listings parsing function
@@ -282,6 +282,7 @@ We can use this data to visualize the distribution and concentration of properti
 ## Edit
 
 - added instructions on how to change city in the query 
-
+- updated xpath so it works with the new layout of airbn - 24/06/16
+   - changed `'//div[@class="listing"]/@data-url'` to `'//a[@class="media-photo media-cover"]/@href'`
 
 
