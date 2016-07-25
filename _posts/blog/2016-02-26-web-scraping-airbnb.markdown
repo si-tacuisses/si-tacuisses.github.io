@@ -39,7 +39,7 @@ First we are going to set up the environment to get [scrapy](scrapy.org) to work
 
 ## Setting up the system
 
-I assume that you have some basic python programming skills and are not intimidate by the command line. We are going to use the python scraping library [scrapy](https://scrapy.org) to do the heavy lifting of routing, scheduling and processing requests.
+I assume that you have some basic python programming skills and are not intimidate by the command line. We are going to use the python scraping library [scrapy](http://scrapy.org) to do the heavy lifting of routing, scheduling and processing requests.
 
 To install scrapy follow their setup guide for your system, note that scrapy is not compatible with python 3 so make sure that you are using 2.7. Even better if you plan on doing more work in python, and trust me you will, then you should install the great scientific python bundle [Anaconda](https://www.continuum.io/).
 
