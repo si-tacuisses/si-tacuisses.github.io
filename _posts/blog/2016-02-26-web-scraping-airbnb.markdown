@@ -28,7 +28,7 @@ I have always had some questions I wanted to ask airbnb, for example:
 
 I am sure that you can come up with your own set of questions you would like to tickle out of such data. So here I walk you through how to get *some* of the data, to answer *some* of these questions.
 
-You can find the complete code [here as github repo](https://github.com/si-tacuisses/bnb_scrapy_tutorial), feel free to fork, clone or do whatever you want with it.
+You can find the complete code [here as github repo](https://github.com/verginer/bnb_scrapy_tutorial), feel free to fork, clone or do whatever you want with it.
 
 * Table of Contents
 {:toc}
