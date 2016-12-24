@@ -186,7 +186,7 @@ def parse_listing_contents(self, response):
         item['instant_book'] = airbnb_json['instant_book_possible']
         item['accuracy_rating'] = airbnb_json['accuracy_rating']
         item['response_time'] = airbnb_json['response_time_shown']
-        item['response_rate'] = airbnb_json['reponse_rate_shown']   
+        item['response_rate'] = airbnb_json['response_rate_shown']   
         item['nightly_price'] = airbnb_json_all['nightly_price']
     item['url'] = response.url
     yield item
