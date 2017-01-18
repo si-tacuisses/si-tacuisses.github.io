@@ -286,3 +286,8 @@ We can use this data to visualize the distribution and concentration of properti
    - changed `'//div[@class="listing"]/@data-url'` to `'//a[@class="media-photo media-cover"]/@href'`
 
 
+
+## Issues with code.
+
+If you have problems with the code please open an Issue on Github. Talking about code there is a lot easier, thanks ;).
+[here is the Issues page](https://github.com/verginer/bnb_scrapy_tutorial/issues)
