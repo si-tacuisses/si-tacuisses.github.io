@@ -279,6 +279,17 @@ We can use this data to visualize the distribution and concentration of properti
 
 ![Airbnb Properties in Lucca and their Concentration]({{ site.baseurl }}/images/luccaairbnbmap.png "Airbnb properties in Lucca")
 
+## Issues with code.
+
+If you have problems with the code please open an Issue on Github. Talking about code there is a lot easier, thanks ;).
+[here is the Issues page](https://github.com/verginer/bnb_scrapy_tutorial/issues)
+
+## Common Problems
+
+If your script runs but you do not get any results, then it could be that airbnb redirects you to a country specific domain. For example, you are in the uk and you are redirected from `airbnb.com -> airbnb.co.uk`.
+Since in the above code I have set `allowed_domains = ["airbnb.com"]` to only contain `airbnb.com` the spider would refuse to go on any other domain.
+A workaround is to either remove this line and let the spider roam free, or you add your domain to it, e.g  `allowed_domains = ["airbnb.com", "airbnb.co.uk"]`.
+
 ## Edit
 
 - added instructions on how to change city in the query 
@@ -287,7 +298,4 @@ We can use this data to visualize the distribution and concentration of properti
 
 
 
-## Issues with code.
 
-If you have problems with the code please open an Issue on Github. Talking about code there is a lot easier, thanks ;).
-[here is the Issues page](https://github.com/verginer/bnb_scrapy_tutorial/issues)
