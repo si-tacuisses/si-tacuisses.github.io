@@ -68,7 +68,7 @@ from https://www.docker.com/what-docker
 
 ---
 
-### Reproducibility
+## Reproducibility
   
   The 4 stages of code isoltion:
 
@@ -113,7 +113,7 @@ CMD bash
 
 ---
 
-### Portability
+## Portability
 
   - If a image works as expected on your machine it is **guaranteed** to work on an other
   - Can be easily shared with collaborators (-> all work with the same development environment)
@@ -122,7 +122,7 @@ CMD bash
 
 ---
 
-### Scalability
+## Scalability
 
   - Start exploring on your local machine
   - You do not have enough RAM/CPU ...
