@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Luca Verginer">
+  <meta name="dcterms.date" content="2017-01-03">
+  <title>Docker</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">Docker</h1>
+  <p class="subtitle">for reproducible and portable (Data) Science</p>
+  <p class="author">Luca Verginer</p>
+  <p class="date">01/03/2017</p>
+</section>
+
+<section class="slide level2">
+
+<figure>
+<img src="img/imt_buffet_logo.png" />
+</figure>
+<ul>
+<li>IMT Reading Group</li>
+<li>Slack Channel</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<figure>
+<img src="img/docker_logo.png" />
+</figure>
+</section>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
+<ul>
+<li>What is Docker?</li>
+<li>Why would you want to use it?</li>
+<li>&quot;Nice! But how do I use it?!&quot;</li>
+<li>Basic Architecture</li>
+<li>Demo</li>
+</ul>
+</section>
+<section><section id="what-is-it" class="titleslide slide level1"><h1>What is it?</h1></section><section class="slide level2">
+
+<blockquote>
+<p>Docker containers wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries – anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.</p>
+</blockquote>
+<p>from https://www.docker.com/what-docker</p>
+</section><section class="slide level2">
+
+<ul>
+<li>Think of <code>Docker</code> as a <em>Ultra Light</em> Virtual Machine (VM) .</li>
+<li>It is a tool to create linux images with <strong>&quot;Known Good State&quot;</strong>.</li>
+<li>Offers <em>free</em> infrastrucure to store, distribute and retrieve images from anywhere on the web.</li>
+</ul>
+</section><section id="the-2-central-concepts" class="slide level2">
+<h2>The 2 central concepts</h2>
+<p><strong>Image</strong> and <strong>Container</strong></p>
+</section><section class="slide level2">
+
+<ul>
+<li>Image:
+<ul>
+<li>Large files containing a frozen Linux instance</li>
+<li>i.e. an Snapshot of a machine you care about.</li>
+</ul></li>
+<li>Container:
+<ul>
+<li>A running machine created from an Image</li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li>Image &lt;-&gt; Container</li>
+<li>OOP: Class &lt;-&gt; Class instance</li>
+<li>OS: binary &lt;-&gt; Process (i.e. something with a <code>PID</code>)</li>
+</ul>
+</section><section id="what-is-it-good-for" class="slide level2">
+<h2>What is it good for?</h2>
+</section><section class="slide level2">
+
+<section id="reproducibility" class="level3">
+<h3>Reproducibility</h3>
+<p>The 4 stages of code isoltion:</p>
+<ol type="1">
+<li>Separate folder for each project</li>
+<li>Using Github or other VCS</li>
+<li>python virtual environments (i.e. manipulate <code>$PATH</code>)</li>
+<li>Virtual Machine</li>
+</ol>
+</section>
+</section><section class="slide level2">
+
+<p>Problems with the above solutions</p>
+<ul>
+<li>Could impact an other project</li>
+<li>No guarantee it will work on different machine</li>
+<li>... or tomorrow on the same</li>
+<li>Slow and huge</li>
+<li>Difficult to move around</li>
+</ul>
+</section><section class="slide level2">
+
+<p><code>Docker</code> to the rescue!</p>
+<ul>
+<li>A machine is completely defined by its <code>Dockerfile</code></li>
+</ul>
+<pre class="docker"><code># set base image
+FROM ubuntu:14.04
+
+# install what you need
+RUN apt-get update &amp;&amp; apt-get install -y package-bar
+RUN pip install numpy scipy
+
+# default command to execute when starting
+CMD bash</code></pre>
+</section><section class="slide level2">
+
+<ul>
+<li>Allows to deterministically recreate a machine from scratch</li>
+<li>Anyone can reproduce your &quot;research&quot; if you publish it's Dockerimage and Raw Data</li>
+</ul>
+</section><section class="slide level2">
+
+<section id="portability" class="level3">
+<h3>Portability</h3>
+<ul>
+<li>If a image works as expected on your machine it is <strong>guaranteed</strong> to work on an other</li>
+<li>Can be easily shared with collaborators (-&gt; all work with the same development environment)</li>
+<li>If your computer breaks, you start working immmediately using any other Machine
+<ul>
+<li>Assuming you backup your data.</li>
+</ul></li>
+</ul>
+</section>
+</section><section class="slide level2">
+
+<section id="scalability" class="level3">
+<h3>Scalability</h3>
+<ul>
+<li>Start exploring on your local machine</li>
+<li>You do not have enough RAM/CPU ...</li>
+<li>Deploy to an Amazon Server or your department's Servers in a few minutes.</li>
+</ul>
+</section>
+</section><section id="specific-applications" class="slide level2">
+<h2>Specific Applications</h2>
+<ul>
+<li>Example 1: Run a complex server set.
+<ul>
+<li>MySQL</li>
+<li>Jupyter</li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li>Example 2: Graph analysis.
+<ul>
+<li>Neo4j</li>
+<li>RStudio</li>
+<li><code>graph_tool</code> notoriously difficult to install parallel version.</li>
+</ul></li>
+</ul>
+</section></section>
+<section><section id="architecture" class="titleslide slide level1"><h1>Architecture</h1></section><section class="slide level2">
+
+<figure>
+<img src="img/vm_arch.png" alt="VM Architecture" /><figcaption>VM Architecture</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<figure>
+<img src="img/docker_arch.png" alt="Docker Architecture" /><figcaption>Docker Architecture</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<figure>
+<img src="img/docker_layers_1.png" alt="Layers" /><figcaption>Layers</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<figure>
+<img src="img/docker_layers_2.png" alt="Layers" /><figcaption>Layers</figcaption>
+</figure>
+</section></section>
+<section><section id="demo" class="titleslide slide level1"><h1>Demo</h1></section><section class="slide level2">
+
+<figure>
+<img src="img/dilbert_demo.jpg" />
+</figure>
+</section><section id="how-to-install" class="slide level2">
+<h2>How to install</h2>
+<p>Instructions for Mac, Windows and Linux are available https://docs.docker.com/engine/installation/</p>
+<ul>
+<li>very easy for Linux</li>
+<li>easy for Mac and Windows 10</li>
+<li>a little work for Windows 7, 8</li>
+</ul>
+</section><section id="test-if-it-works" class="slide level2">
+<h2>Test if it works</h2>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">docker</span> run hello-world
+<span class="ex">docker</span> ps
+<span class="ex">docker</span> ps -a
+<span class="ex">docker</span> rm quirky_babbage</code></pre></div>
+</section><section id="dockerfiles-light" class="slide level2">
+<h2>Dockerfiles light</h2>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">docker</span> run docker/whalesay</code></pre></div>
+</section><section class="slide level2">
+
+<p>boring!</p>
+<ul>
+<li>Customize whalesay image</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">docker</span> build -t wisewhale .</code></pre></div>
+</section><section id="jupyter-and-rstudio" class="slide level2">
+<h2>Jupyter and RStudio</h2>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">docker</span> run -d \
+          --name myjupyter \
+          -p 8888:8888 \
+          --volume <span class="va">$PWD</span>:/home/jovyan/work \
+          jupyter/scipy-notebook</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">docker</span> run -d \ 
+      <span class="ex">--name</span> myrstudio \
+      -p 8787:8787 \
+      -v <span class="va">$PWD</span>:/home/rstudio \
+      rocker/rstudio</code></pre></div>
+</section><section id="on-amazon-cloud" class="slide level2">
+<h2>On Amazon Cloud</h2>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">ssh</span> -i <span class="op">&lt;</span>keyfile<span class="op">&gt;</span> ubuntu@<span class="op">&lt;</span>aws-ip-address<span class="op">&gt;</span>
+<span class="co"># now you are on an ec2 instance</span>
+<span class="ex">docker</span> run -d \
+      --name myjupy \
+      -e GEN_CERT=yes \
+      -v <span class="va">$PWD</span>:/home/jovyan/work \
+      verginer/scipy_graph_tool
+
+<span class="ex">docker</span> logs myjupy <span class="co"># to get the security token</span></code></pre></div>
+</section><section id="or-just-try-a-new-technology" class="slide level2">
+<h2>Or just try a new technology</h2>
+<p>For nearly every micro-service/library/rpository there is a <code>Dockerfile</code> or <code>docker-compose.yml</code> to get it running in minutes.</p>
+</section></section>
+<section><section id="thats-it" class="titleslide slide level1"><h1>That's it!</h1></section><section class="slide level2">
+
+<p>Some Places to get help/containers and ideas</p>
+<ul>
+<li><a href="http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/">How Kaggle uses Containers</a>, they make their images plublicly available if you want to use them.</li>
+<li><a href="https://www.continuum.io/blog/developer-blog/anaconda-and-docker-better-together-reproducible-data-science">Continuum Analytics</a> Post on why Docker is key to reproducible research.</li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li><a href="https://github.com/jupyter/docker-stacks">Official Jupyter Docker Stacks</a>, finely tuned base images for nearly all needs.</li>
+<li><a href="https://blog.dominodatalab.com/data-science-docker/">Domino Labs on Reproducibility</a> An account of how large companies use Docker to make carry out Data analytics.</li>
+<li><a href="https://github.com/veggiemonk/awesome-docker">Awesome Docker</a>, a curated list of useful &quot;Docker&quot; stuff</li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li><a href="https://github.com/wsargent/docker-cheat-sheet">Docker Cheat Sheet</a>, short overview of commands and how to set it up for your system (has 9,000 Github Stars)</li>
+<li><a href="https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/">Best Practice for Dockerfiles</a> a few industry rules to write efficient Dockerfiles (i.e. make them easy to read and transparent)</li>
+<li><a href="https://www.katacoda.com/">Katakota</a> Interactive Online Tutorial, showing the basics</li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li><a href="http://play-with-docker.com/">Play with Docker</a> access to a docker machine in the browser to play with, no setup required</li>
+<li><a href="https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/">Windows Containers</a>, if you don't like Linux that much here is a Windows centri view by Microsoft.</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

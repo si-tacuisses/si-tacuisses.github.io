@@ -4,7 +4,7 @@ title:
 locale: en_US
 description: Bits and pieces from a Maths and Econ Geek
 logo: LucaASCII.svg
-url: 
+url: verginer.eu
 
 # Jekyll configuration
 
@@ -18,8 +18,7 @@ markdown:    kramdown
 sass:
   sass_dir: _sass
   style: compressed
-gems:
-  - jekyll-sitemap
+
 
 kramdown:
   auto_ids: true
