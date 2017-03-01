@@ -108,8 +108,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <ul>
 <li>Think of <code>Docker</code> as a <em>Ultra Light</em> Virtual Machine (VM) .</li>
-<li>It is a tool to create linux images with <strong>&quot;Known Good State&quot;</strong>.</li>
-<li>Offers <em>free</em> infrastrucure to store, distribute and retrieve images from anywhere on the web.</li>
+<li>It is a tool to create Linux images with <strong>&quot;Known Good State&quot;</strong>.</li>
+<li>Offers <em>free</em> infrastructure to store, distribute and retrieve images from anywhere on the web.</li>
 </ul>
 </section><section id="the-2-central-concepts" class="slide level2">
 <h2>The 2 central concepts</h2>
@@ -138,7 +138,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h2>What is it good for?</h2>
 </section><section class="slide level2">
 
-<p>The 4 stages of code isoltion:</p>
+<p>The 4 stages of code isolation:</p>
 <ol type="1">
 <li>Separate folder for each project</li>
 <li>Using Github or other VCS</li>
@@ -174,14 +174,14 @@ CMD bash</code></pre>
 <h2>Reproducibility</h2>
 <ul>
 <li>Allows to deterministically recreate a machine from scratch</li>
-<li>Anyone can reproduce your &quot;research&quot; if you publish it's Dockerimage and Raw Data</li>
+<li>Anyone can reproduce your &quot;research&quot; if you publish it's Docker Image and raw data</li>
 </ul>
 </section><section id="portability" class="slide level2">
 <h2>Portability</h2>
 <ul>
 <li>If a image works as expected on your machine it is <strong>guaranteed</strong> to work on an other</li>
 <li>Can be easily shared with collaborators (-&gt; all work with the same development environment)</li>
-<li>If your computer breaks, you start working immmediately using any other Machine
+<li>If your computer breaks, you start working immediately using any other Machine
 <ul>
 <li>Assuming you backup your data.</li>
 </ul></li>
@@ -196,10 +196,11 @@ CMD bash</code></pre>
 </section><section id="specific-applications" class="slide level2">
 <h2>Specific Applications</h2>
 <ul>
-<li>Example 1: Run a complex server set.
+<li>Example 1: Run a complex server set up.
 <ul>
 <li>MySQL</li>
 <li>Jupyter</li>
+<li>API keys (e.g. Google Maps)</li>
 </ul></li>
 </ul>
 </section><section class="slide level2">
@@ -209,7 +210,8 @@ CMD bash</code></pre>
 <ul>
 <li>Neo4j</li>
 <li>RStudio</li>
-<li><code>graph_tool</code> notoriously difficult to install parallel version.</li>
+<li>PostgreSQL with GIS support (for geographic analysis)</li>
+<li><code>graph_tool</code> (notoriously difficult to install/build a parallel version)</li>
 </ul></li>
 </ul>
 </section></section>
@@ -253,8 +255,8 @@ CMD bash</code></pre>
 <span class="ex">docker</span> ps
 <span class="ex">docker</span> ps -a
 <span class="ex">docker</span> rm quirky_babbage</code></pre></div>
-</section><section id="dockerfiles-light" class="slide level2">
-<h2>Dockerfiles light</h2>
+</section><section id="dockerfile-light" class="slide level2">
+<h2>Dockerfile light</h2>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">docker</span> run docker/whalesay</code></pre></div>
 </section><section class="slide level2">
 
@@ -285,16 +287,17 @@ CMD bash</code></pre>
       -v <span class="va">$PWD</span>:/home/jovyan/work \
       verginer/scipy_graph_tool
 
-<span class="ex">docker</span> logs myjupy <span class="co"># to get the security token</span></code></pre></div>
+<span class="co"># to get the security token</span>
+<span class="ex">docker</span> logs myjupy </code></pre></div>
 </section><section id="or-just-try-a-new-technology" class="slide level2">
 <h2>Or just try a new technology</h2>
-<p>For nearly every micro-service/library/rpository there is a <code>Dockerfile</code> or <code>docker-compose.yml</code> to get it running in minutes.</p>
+<p>For nearly every micro-service/library/repository there is a <code>Dockerfile</code> or <code>docker-compose.yml</code> to get it running in minutes.</p>
 </section></section>
 <section><section id="thats-it" class="titleslide slide level1"><h1>That's it!</h1></section><section class="slide level2">
 
-<p>Some Places to get help/containers and ideas</p>
+<p>Some Places to get help/containers and ideas.</p>
 <ul>
-<li><a href="http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/">How Kaggle uses Containers</a>, they make their images plublicly available if you want to use them.</li>
+<li><a href="http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/">How Kaggle uses Containers</a>, they make their images publicly available if you want to use them.</li>
 <li><a href="https://www.continuum.io/blog/developer-blog/anaconda-and-docker-better-together-reproducible-data-science">Continuum Analytics</a> Post on why Docker is key to reproducible research.</li>
 </ul>
 </section><section class="slide level2">
@@ -309,13 +312,13 @@ CMD bash</code></pre>
 <ul>
 <li><a href="https://github.com/wsargent/docker-cheat-sheet">Docker Cheat Sheet</a>, short overview of commands and how to set it up for your system (has 9,000 Github Stars)</li>
 <li><a href="https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/">Best Practice for Dockerfiles</a> a few industry rules to write efficient Dockerfiles (i.e. make them easy to read and transparent)</li>
-<li><a href="https://www.katacoda.com/">Katakota</a> Interactive Online Tutorial, showing the basics</li>
+<li><a href="https://www.katacoda.com/">Katakota</a> Interactive On-line Tutorial, showing the basics</li>
 </ul>
 </section><section class="slide level2">
 
 <ul>
 <li><a href="http://play-with-docker.com/">Play with Docker</a> access to a docker machine in the browser to play with, no setup required</li>
-<li><a href="https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/">Windows Containers</a>, if you don't like Linux that much here is a Windows centri view by Microsoft.</li>
+<li><a href="https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/">Windows Containers</a>, if you don't like Linux that much here is a Windows centric view by Microsoft.</li>
 </ul>
 </section></section>
     </div>

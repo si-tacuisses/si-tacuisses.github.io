@@ -38,8 +38,8 @@ from https://www.docker.com/what-docker
 ---
 
  - Think of `Docker` as a *Ultra Light* Virtual Machine (VM) .
- - It is a tool to create linux images with **"Known Good State"**.
- - Offers *free* infrastrucure to store, distribute and retrieve images
+ - It is a tool to create Linux images with **"Known Good State"**.
+ - Offers *free* infrastructure to store, distribute and retrieve images
    from anywhere on the web.
 
 ---
@@ -69,7 +69,7 @@ from https://www.docker.com/what-docker
 ---
 
   
-  The 4 stages of code isoltion:
+  The 4 stages of code isolation:
 
   1) Separate folder for each project
   2) Using Github or other VCS
@@ -111,7 +111,7 @@ CMD bash
 ## Reproducibility
 
   - Allows to deterministically recreate a machine from scratch
-  - Anyone can reproduce your "research" if you publish it's Dockerimage and Raw Data 
+  - Anyone can reproduce your "research" if you publish it's Docker Image and raw data 
 
 ---
 
@@ -119,7 +119,7 @@ CMD bash
 
   - If a image works as expected on your machine it is **guaranteed** to work on an other
   - Can be easily shared with collaborators (-> all work with the same development environment)
-  - If your computer breaks, you start working immmediately using any other Machine
+  - If your computer breaks, you start working immediately using any other Machine
     - Assuming you backup your data.
 
 ---
@@ -134,16 +134,18 @@ CMD bash
 
 ## Specific Applications
 
-  - Example 1: Run a complex server set.
+  - Example 1: Run a complex server set up.
     - MySQL
     - Jupyter
+    - API keys (e.g. Google Maps)
 
 ---
 
   - Example 2: Graph analysis.
     - Neo4j
     - RStudio
-    - `graph_tool` notoriously difficult to install parallel version.
+    - PostgreSQL with GIS support (for geographic analysis)
+    - `graph_tool` (notoriously difficult to install/build a parallel version)
 
 
 
@@ -193,7 +195,7 @@ docker ps -a
 docker rm quirky_babbage
 ```
 
-## Dockerfiles light
+## Dockerfile light
 
 ```bash
 docker run docker/whalesay
@@ -239,14 +241,15 @@ docker run -d \
       -v $PWD:/home/jovyan/work \
       verginer/scipy_graph_tool
 
-docker logs myjupy # to get the security token
+# to get the security token
+docker logs myjupy 
 ```
 
 
 
 ## Or just try a new technology
 
-For nearly every micro-service/library/rpository there is a `Dockerfile` or `docker-compose.yml`
+For nearly every micro-service/library/repository there is a `Dockerfile` or `docker-compose.yml`
 to get it running in minutes.
 
 
@@ -254,10 +257,10 @@ to get it running in minutes.
 
 ---
 
-Some Places to get help/containers and ideas
+Some Places to get help/containers and ideas.
 
   - [How Kaggle uses Containers](http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/), they 
-  make their images plublicly available if you want to use them.
+  make their images publicly available if you want to use them.
   - [Continuum Analytics](https://www.continuum.io/blog/developer-blog/anaconda-and-docker-better-together-reproducible-data-science)
   Post on why Docker is key to reproducible research.
 
@@ -274,13 +277,13 @@ Some Places to get help/containers and ideas
   your system (has 9,000 Github Stars)
   - [Best Practice for Dockerfiles](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/) a few industry rules to write
   efficient Dockerfiles (i.e. make them easy to read and transparent)
-  - [Katakota](https://www.katacoda.com/) Interactive Online Tutorial, showing the basics
+  - [Katakota](https://www.katacoda.com/) Interactive On-line Tutorial, showing the basics
 
 ---
 
   - [Play with Docker](http://play-with-docker.com/) access to a docker machine in the browser to play with, no setup required
   - [Windows Containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/), if you don't like Linux that much
-  here is a Windows centri view by Microsoft.
+  here is a Windows centric view by Microsoft.
 
 
 
