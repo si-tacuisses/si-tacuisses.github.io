@@ -31,7 +31,7 @@ date: 01/03/2017
 
 ---
 
-![](img/reproducibility.gif)
+<!-- ![](img/reproducibility.gif) -->
 
   - Reproducibility
   - Portability
