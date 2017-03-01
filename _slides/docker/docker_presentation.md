@@ -239,6 +239,7 @@ docker run -d \
       --name myjupy \
       -e GEN_CERT=yes \
       -v $PWD:/home/jovyan/work \
+      -p 80:8888 \
       verginer/scipy_graph_tool
 
 # to get the security token
@@ -251,6 +252,13 @@ docker logs myjupy
 
 For nearly every micro-service/library/repository there is a `Dockerfile` or `docker-compose.yml`
 to get it running in minutes.
+
+```bash
+docker run \
+  -d -p 7474:7474 \
+  -v /Users/ryan/panama-papers-data:/data \
+  ryguyrg/neo4j-panama-papers
+```
 
 
 # That's it!

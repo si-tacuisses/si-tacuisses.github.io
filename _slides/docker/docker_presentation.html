@@ -285,6 +285,7 @@ CMD bash</code></pre>
       --name myjupy \
       -e GEN_CERT=yes \
       -v <span class="va">$PWD</span>:/home/jovyan/work \
+      -p 80:8888 \
       verginer/scipy_graph_tool
 
 <span class="co"># to get the security token</span>
@@ -292,6 +293,10 @@ CMD bash</code></pre>
 </section><section id="or-just-try-a-new-technology" class="slide level2">
 <h2>Or just try a new technology</h2>
 <p>For nearly every micro-service/library/repository there is a <code>Dockerfile</code> or <code>docker-compose.yml</code> to get it running in minutes.</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">docker</span> run \
+  -d -p 7474:7474 \
+  -v /Users/ryan/panama-papers-data:/data \
+  ryguyrg/neo4j-panama-papers</code></pre></div>
 </section></section>
 <section><section id="thats-it" class="titleslide slide level1"><h1>That's it!</h1></section><section class="slide level2">
 
