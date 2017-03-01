@@ -253,6 +253,8 @@ docker logs myjupy
 For nearly every micro-service/library/repository there is a `Dockerfile` or `docker-compose.yml`
 to get it running in minutes.
 
+---
+
 ```bash
 docker run \
   -d -p 7474:7474 \
