@@ -100,9 +100,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </section>
 <section><section id="what-is-it" class="titleslide slide level1"><h1>What is it?</h1></section><section class="slide level2">
 
-<blockquote>
-<p>Docker containers wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries – anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.</p>
-</blockquote>
+<p>Docker is an open source project that:</p>
+<ul>
+<li>wraps a piece of software</li>
+<li>in a complete filesystem</li>
+<li>that contains everything it needs to run (i.e., anything you can install on a server)</li>
+</ul>
 <p>from https://www.docker.com/what-docker</p>
 </section><section class="slide level2">
 
@@ -111,28 +114,27 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>It is a tool to create Linux images with <strong>&quot;Known Good State&quot;</strong>.</li>
 <li>Offers <em>free</em> infrastructure to store, distribute and retrieve images from anywhere on the web.</li>
 </ul>
-</section><section id="the-2-central-concepts" class="slide level2">
-<h2>The 2 central concepts</h2>
-<p><strong>Image</strong> and <strong>Container</strong></p>
+</section><section id="docker-jargon-and-central-concepts" class="slide level2">
+<h2>Docker Jargon and central concepts</h2>
+<ul>
+<li><p><em>docker</em> <em>engine</em> - builds and runs your Docker containers</p></li>
+<li><p><em>image</em> - the basis of containers</p></li>
+<li><p><em>container</em> - an instance of an image</p></li>
+</ul>
 </section><section class="slide level2">
 
 <ul>
-<li>Image:
-<ul>
-<li>Large files containing a frozen Linux instance</li>
-<li>i.e. an Snapshot of a machine you care about.</li>
-</ul></li>
-<li>Container:
-<ul>
-<li>A running machine created from an Image</li>
-</ul></li>
+<li><p><em>docker-compose</em> - a tool for defining and running multi-container Docker applications</p></li>
+<li><p><em>docker</em> <em>swarm,</em> <em>kubernetes,</em> <em>mesos,</em> <em>...</em> - orchestration tools that help start containers on appropriate hosts and connect them together.</p></li>
+<li><p><em>registry</em> - a repository for images (note Docker provides a hosted &quot;registry&quot; called Docker Hub)</p></li>
 </ul>
 </section><section class="slide level2">
 
 <ul>
 <li>Image &lt;-&gt; Container</li>
 <li>OOP: Class &lt;-&gt; Class instance</li>
-<li>OS: binary &lt;-&gt; Process (i.e. something with a <code>PID</code>)</li>
+<li>OS: binary &lt;-&gt; Process</li>
+<li>Does not create a copy!</li>
 </ul>
 </section><section id="what-is-it-good-for" class="slide level2">
 <h2>What is it good for?</h2>
@@ -243,11 +245,11 @@ CMD bash</code></pre>
 </figure>
 </section><section id="how-to-install" class="slide level2">
 <h2>How to install</h2>
-<p>Instructions for Mac, Windows and Linux are available https://docs.docker.com/engine/installation/</p>
+<p>Installation:</p>
 <ul>
-<li>very easy for Linux</li>
-<li>easy for Mac and Windows 10</li>
-<li>a little work for Windows 7, 8</li>
+<li><p><a href="https://docs.docker.com/engine/installation/">general instructions</a></p></li>
+<li><p><a href="https://docs.docker.com/engine/installation/linux/ubuntulinux/">Ubuntu</a></p></li>
+<li><p><a href="https://docs.docker.com/engine/installation/mac/">OSX</a></p></li>
 </ul>
 </section><section id="test-if-it-works" class="slide level2">
 <h2>Test if it works</h2>
@@ -326,7 +328,10 @@ CMD bash</code></pre>
 <ul>
 <li><a href="http://play-with-docker.com/">Play with Docker</a> access to a docker machine in the browser to play with, no setup required</li>
 <li><a href="https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/">Windows Containers</a>, if you don't like Linux that much here is a Windows centric view by Microsoft.</li>
+<li>Tip use <a href="http://drivendata.github.io/cookiecutter-data-science/">Cookiecutter Data Science</a> as project structure layout</li>
 </ul>
+</section><section class="slide level2">
+
 </section></section>
     </div>
   </div>

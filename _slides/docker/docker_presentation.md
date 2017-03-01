@@ -20,18 +20,22 @@ date: 01/03/2017
 
 ## Overview
 
- - What is Docker?
- - Why would you want to use it?
- - "Nice! But how do I use it?!"
- - Basic Architecture
- - Demo
+  - What is Docker?
+  - Why would you want to use it?
+  - "Nice! But how do I use it?!"
+  - Basic Architecture
+  - Demo
 
 
 # What is it?
 
 ---
 
-> Docker containers wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries – anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.
+Docker is an open source project that:
+
+  - wraps a piece of software
+  - in a complete filesystem
+  - that contains everything it needs to run (i.e., anything you can install on a server)
 
 from https://www.docker.com/what-docker
 
@@ -44,24 +48,29 @@ from https://www.docker.com/what-docker
 
 ---
 
-## The 2 central concepts
+## Docker Jargon and central concepts
 
-  **Image** and **Container**
+
+- *docker* *engine* - builds and runs your Docker containers
+
+- *image* - the basis of containers
+
+- *container* - an instance of an image
 
 ---
 
-  - Image:
-    - Large files containing a frozen Linux instance
-    - i.e. an Snapshot of a machine you care about.
+- *docker-compose* - a tool for defining and running multi-container Docker applications
 
-  - Container:
-    - A running machine created from an Image
+- *docker* *swarm,* *kubernetes,* *mesos,* *...* - orchestration tools that help start containers on appropriate hosts and connect them together.
+
+- *registry* - a repository for images (note Docker provides a hosted "registry" called Docker Hub)
 
 ---
 
   - Image <-> Container
   - OOP: Class <-> Class instance
-  - OS: binary <-> Process (i.e. something with a `PID`)
+  - OS: binary <-> Process 
+  - Does not create a copy!
  
 
 ## What is it good for?
@@ -179,11 +188,13 @@ CMD bash
 
 ## How to install
 
-Instructions for Mac, Windows and Linux are available https://docs.docker.com/engine/installation/
+Installation:
 
-  - very easy for Linux
-  - easy for Mac and Windows 10
-  - a little work for Windows 7, 8
+- [general instructions](https://docs.docker.com/engine/installation/)
+
+- [Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntulinux/)
+
+- [OSX](https://docs.docker.com/engine/installation/mac/)
 
 
 ## Test if it works
@@ -294,6 +305,9 @@ Some Places to get help/containers and ideas.
   - [Play with Docker](http://play-with-docker.com/) access to a docker machine in the browser to play with, no setup required
   - [Windows Containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/), if you don't like Linux that much
   here is a Windows centric view by Microsoft.
+  - Tip use [Cookiecutter Data Science](http://drivendata.github.io/cookiecutter-data-science/) as project structure layout 
+
+--- 
 
 
 
