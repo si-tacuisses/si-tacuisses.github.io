@@ -91,53 +91,23 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <section id="overview" class="slide level2">
 <h2>Overview</h2>
 <ul>
+<li>What is it good for?</li>
 <li>What is Docker?</li>
-<li>Why would you want to use it?</li>
 <li>&quot;Nice! But how do I use it?!&quot;</li>
 <li>Basic Architecture</li>
 <li>Demo</li>
 </ul>
 </section>
-<section><section id="what-is-it" class="titleslide slide level1"><h1>What is it?</h1></section><section class="slide level2">
+<section><section id="what-is-it-good-for" class="titleslide slide level1"><h1>What is it good for?</h1></section><section class="slide level2">
 
-<p>Docker is an open source project that:</p>
+<figure>
+<img src="img/reproducibility.gif" />
+</figure>
 <ul>
-<li>wraps a piece of software</li>
-<li>in a complete filesystem</li>
-<li>that contains everything it needs to run (i.e., anything you can install on a server)</li>
+<li>Reproducibility</li>
+<li>Portability</li>
+<li>Scalability</li>
 </ul>
-<p>from https://www.docker.com/what-docker</p>
-</section><section class="slide level2">
-
-<ul>
-<li>Think of <code>Docker</code> as a <em>Ultra Light</em> Virtual Machine (VM) .</li>
-<li>It is a tool to create Linux images with <strong>&quot;Known Good State&quot;</strong>.</li>
-<li>Offers <em>free</em> infrastructure to store, distribute and retrieve images from anywhere on the web.</li>
-</ul>
-</section><section id="docker-jargon-and-central-concepts" class="slide level2">
-<h2>Docker Jargon and central concepts</h2>
-<ul>
-<li><p><em>docker</em> <em>engine</em> - builds and runs your Docker containers</p></li>
-<li><p><em>image</em> - the basis of containers</p></li>
-<li><p><em>container</em> - an instance of an image</p></li>
-</ul>
-</section><section class="slide level2">
-
-<ul>
-<li><p><em>docker-compose</em> - a tool for defining and running multi-container Docker applications</p></li>
-<li><p><em>docker</em> <em>swarm,</em> <em>kubernetes,</em> <em>mesos,</em> <em>...</em> - orchestration tools that help start containers on appropriate hosts and connect them together.</p></li>
-<li><p><em>registry</em> - a repository for images (note Docker provides a hosted &quot;registry&quot; called Docker Hub)</p></li>
-</ul>
-</section><section class="slide level2">
-
-<ul>
-<li>Image &lt;-&gt; Container</li>
-<li>OOP: Class &lt;-&gt; Class instance</li>
-<li>OS: binary &lt;-&gt; Process</li>
-<li>Does not create a copy!</li>
-</ul>
-</section><section id="what-is-it-good-for" class="slide level2">
-<h2>What is it good for?</h2>
 </section><section class="slide level2">
 
 <p>The 4 stages of code isolation:</p>
@@ -157,9 +127,53 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>Slow and huge</li>
 <li>Difficult to move around</li>
 </ul>
+</section></section>
+<section><section id="what-is-it" class="titleslide slide level1"><h1>What is it?</h1></section><section class="slide level2">
+
+<p>Docker is an open source project that:</p>
+<ul>
+<li>wraps a piece of software</li>
+<li>in a complete filesystem</li>
+<li>that contains everything it needs to run (i.e., anything you can install on a server)</li>
+<li>and <strong>guarantees</strong> it will always <strong>run the same</strong>, regardless of its environment</li>
+</ul>
+<p>from https://www.docker.com/what-docker</p>
 </section><section class="slide level2">
 
-<p><code>Docker</code> to the rescue!</p>
+<ul>
+<li>Think of <code>Docker</code> as a <em>Ultra Light</em> Virtual Machine (VM) .</li>
+<li>It is a tool to create Linux images with <strong>&quot;Known Good State&quot;</strong>.</li>
+<li>Offers <em>free</em> infrastructure to store, distribute and retrieve images from anywhere on the web.</li>
+</ul>
+</section><section id="docker-jargon-and-central-concepts" class="slide level2">
+<h2>Docker Jargon and central concepts</h2>
+<ul>
+<li><em>docker</em> <em>engine</em> - builds and runs your Docker containers</li>
+<li><em>image</em> - the basis of containers</li>
+<li><em>container</em> - an instance of an image</li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li><em>docker-compose</em> - a tool for defining and running multi-container Docker applications</li>
+<li><em>docker</em> <em>swarm,</em> <em>kubernetes,</em> <em>mesos,</em> <em>...</em> - orchestration tools that help start containers on appropriate hosts and connect them together.</li>
+<li><em>registry</em> - a repository for images (note Docker provides a hosted &quot;registry&quot; called Docker Hub)</li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li>Image &lt;-&gt; Container</li>
+<li>OOP: Class &lt;-&gt; Class instance</li>
+<li>OS: binary &lt;-&gt; Process</li>
+</ul>
+</section><section id="reproducibility" class="slide level2">
+<h2>Reproducibility</h2>
+<ul>
+<li>Allows to deterministically recreate a machine from scratch</li>
+<li>Anyone can reproduce your &quot;research&quot; if you publish it's Docker Image and raw data</li>
+</ul>
+</section><section class="slide level2">
+
 <ul>
 <li>A machine is completely defined by its <code>Dockerfile</code></li>
 </ul>
@@ -172,12 +186,6 @@ RUN pip install numpy scipy
 
 # default command to execute when starting
 CMD bash</code></pre>
-</section><section id="reproducibility" class="slide level2">
-<h2>Reproducibility</h2>
-<ul>
-<li>Allows to deterministically recreate a machine from scratch</li>
-<li>Anyone can reproduce your &quot;research&quot; if you publish it's Docker Image and raw data</li>
-</ul>
 </section><section id="portability" class="slide level2">
 <h2>Portability</h2>
 <ul>
@@ -220,12 +228,7 @@ CMD bash</code></pre>
 <section><section id="architecture" class="titleslide slide level1"><h1>Architecture</h1></section><section class="slide level2">
 
 <figure>
-<img src="img/vm_arch.png" alt="VM Architecture" /><figcaption>VM Architecture</figcaption>
-</figure>
-</section><section class="slide level2">
-
-<figure>
-<img src="img/docker_arch.png" alt="Docker Architecture" /><figcaption>Docker Architecture</figcaption>
+<img src="img/vm.png" />
 </figure>
 </section><section class="slide level2">
 

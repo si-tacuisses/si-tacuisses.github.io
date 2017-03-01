@@ -14,70 +14,32 @@ date: 01/03/2017
 ---
 
 
-
 ![](img/docker_logo.png)
 
 
-## Overview
 
+## Overview
+  
+  - What is it good for?
   - What is Docker?
-  - Why would you want to use it?
   - "Nice! But how do I use it?!"
   - Basic Architecture
   - Demo
 
 
-# What is it?
+# What is it good for?
 
 ---
 
-Docker is an open source project that:
+![](img/reproducibility.gif)
 
-  - wraps a piece of software
-  - in a complete filesystem
-  - that contains everything it needs to run (i.e., anything you can install on a server)
+  - Reproducibility
+  - Portability
+  - Scalability
 
-from https://www.docker.com/what-docker
 
 ---
 
- - Think of `Docker` as a *Ultra Light* Virtual Machine (VM) .
- - It is a tool to create Linux images with **"Known Good State"**.
- - Offers *free* infrastructure to store, distribute and retrieve images
-   from anywhere on the web.
-
----
-
-## Docker Jargon and central concepts
-
-
-- *docker* *engine* - builds and runs your Docker containers
-
-- *image* - the basis of containers
-
-- *container* - an instance of an image
-
----
-
-- *docker-compose* - a tool for defining and running multi-container Docker applications
-
-- *docker* *swarm,* *kubernetes,* *mesos,* *...* - orchestration tools that help start containers on appropriate hosts and connect them together.
-
-- *registry* - a repository for images (note Docker provides a hosted "registry" called Docker Hub)
-
----
-
-  - Image <-> Container
-  - OOP: Class <-> Class instance
-  - OS: binary <-> Process 
-  - Does not create a copy!
- 
-
-## What is it good for?
-
----
-
-  
   The 4 stages of code isolation:
 
   1) Separate folder for each project
@@ -96,11 +58,63 @@ from https://www.docker.com/what-docker
   - Difficult to move around
 
 
----
-  
-`Docker` to the rescue!
+# What is it?
 
-  - A machine is completely defined by its `Dockerfile`
+---
+
+Docker is an open source project that:
+
+  - wraps a piece of software
+  - in a complete filesystem
+  - that contains everything it needs to run (i.e., anything you can install on a server)
+  - and **guarantees** it will always **run the same**, regardless of its environment
+
+from https://www.docker.com/what-docker
+
+
+---
+
+ - Think of `Docker` as a *Ultra Light* Virtual Machine (VM) .
+ - It is a tool to create Linux images with **"Known Good State"**.
+ - Offers *free* infrastructure to store, distribute and retrieve images
+   from anywhere on the web.
+
+---
+
+
+## Docker Jargon and central concepts
+
+
+- *docker* *engine* - builds and runs your Docker containers
+- *image* - the basis of containers
+- *container* - an instance of an image
+
+---
+
+- *docker-compose* - a tool for defining and running multi-container Docker applications
+- *docker* *swarm,* *kubernetes,* *mesos,* *...* - orchestration tools that help start containers on appropriate hosts and connect them together.
+- *registry* - a repository for images (note Docker provides a hosted "registry" called Docker Hub)
+
+---
+
+  - Image <-> Container
+  - OOP: Class <-> Class instance
+  - OS: binary <-> Process 
+ 
+
+
+---
+
+
+## Reproducibility
+
+  - Allows to deterministically recreate a machine from scratch
+  - Anyone can reproduce your "research" if you publish it's Docker Image and raw data
+
+---
+
+
+- A machine is completely defined by its `Dockerfile`
 
 ```docker
 # set base image
@@ -113,14 +127,6 @@ RUN pip install numpy scipy
 # default command to execute when starting
 CMD bash
 ```
-
----
-
-
-## Reproducibility
-
-  - Allows to deterministically recreate a machine from scratch
-  - Anyone can reproduce your "research" if you publish it's Docker Image and raw data 
 
 ---
 
@@ -162,11 +168,7 @@ CMD bash
 
 ---
 
-![VM Architecture](img/vm_arch.png)
-
----
-
-![Docker Architecture](img/docker_arch.png)
+![](img/vm.png)
 
 ---
 
