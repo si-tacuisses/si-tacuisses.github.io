@@ -68,7 +68,6 @@ from https://www.docker.com/what-docker
 
 ---
 
-## Reproducibility
   
   The 4 stages of code isoltion:
 
@@ -107,6 +106,9 @@ CMD bash
 ```
 
 ---
+
+
+## Reproducibility
 
   - Allows to deterministically recreate a machine from scratch
   - Anyone can reproduce your "research" if you publish it's Dockerimage and Raw Data 
