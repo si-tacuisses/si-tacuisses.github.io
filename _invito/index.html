@@ -1,60 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free coming soon template with jQuery countdown">
-    <meta name="author" content="http://bootstraptaste.com">
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>INVIT COMPLIAGN - Pasquale</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
 
-    <title>Invito</title>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/bottle.jpg" alt="" /></span>
+							<h1>INVIT
+								A MI</br>
+								COMPLIAGN
+							</h1>
+							<p>en sabeda, ai 21.04.2017
+							dales 19.10<br>
+							al Ostaria Posta a Piculin<br>
+							</p>
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/css/bootstrap-theme.css" rel="stylesheet">
-	<link href="assets/css/font-awesome.css" rel="stylesheet">
+							<p>
+							Ne portede nia scincundes,<br>
+							mo osta buna löna!</p>
 
-    <!-- siimple style -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    
-    <!-- =======================================================
-        Theme Name: WeBuild
-        Theme URL: https://bootstrapmade.com/free-bootstrap-coming-soon-template-countdwon/
-        Author: BootstrapMade
-        Author URL: https://bootstrapmade.com
-    ======================================================= -->
-  </head>
+						<a class="button" href="mailto:pasquale.verginer@vbc.bz.it?subject=Conferma%20Invit%20Compliagn&amp;body=Ciao%20Pasquale%2C%20i%20confermëi%20mia%20presënza%20ala%20festa%20cun%20___%20inviá%2C%5Cn%20cun%20de%20bi%20salüc" target="_blank">CONFERMËIA L'INVIT</a>
 
-  <body>
+							<p></p>
+							<!-- <span class="avatar"></span> -->
+							<div id="clockdiv">
+							    <span class="days" style="font-size: 3em"></span> dis, </br>
+							    <span class="hours" style="font-size: 1.5em"></span> ores, 
+							    <span class="minutes" style="font-size: 1.5em"></span> menüc y 
+							    <span class="seconds" style="font-size: 1.5em"></span> secunc
+						</header>
+						<!--
+						<hr />
+						<h2>Extra Stuff!</h2>
+						<form method="post" action="#">
+							<div class="field">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<div class="select-wrapper">
+									<select name="department" id="department">
+										<option value="">Department</option>
+										<option value="sales">Sales</option>
+										<option value="tech">Tech Support</option>
+										<option value="null">/dev/null</option>
+									</select>
+								</div>
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+							</div>
+							<div class="field">
+								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+							</div>
+							<div class="field">
+								<label>But are you a robot?</label>
+								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
+								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
+							</div>
+							<ul class="actions">
+								<li><a href="#" class="button">Get Started</a></li>
+							</ul>
+						</form>
+						<hr />
+						-->
+<!-- 						<footer>
+							<ul class="icons">
+								<li><a href="#" class="fa-twitter">Twitter</a></li>
+								<li><a href="#" class="fa-instagram">Instagram</a></li>
+								<li><a href="#" class="fa-facebook">Facebook</a></li>
+							</ul>
+						</footer> -->
+					</section>
 
-	<div id="wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1>Pasquale</h1>
-                    <div id="countdown"></div>
-                    <h1>Invit</h1>
-                    <h2 class="subtitle">ala festa de compliagn</h2>
-                    <!-- <span class="fa fa-info-circle errspan"></span> -->
-					<ul>
-                        <li>Ostaria Posta</strong> - Piculin, 
-                        <li>en veindres <strong>21.04.2017</strong></li>
-                        <li>dales <strong>19:10</strong></li>
-                        <li>Ne portede nia scincundes, mo osta buna löna!</li>
-                    </ul>
-				</div>
-				
-			</div>		
-		</div>
-	</div>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.countdown.min.js"></script>
-	<script type="text/javascript">
-      $('#countdown').countdown('2017/04/21', function(event) {
-        $(this).html(event.strftime('%w edemes %d dis <br /> %H:%M:%S'));
-      });
-    </script>
-    
-</body>
+				<!-- Footer -->
+	<!-- 				<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer> -->
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+	<script src="assets/js/clock.js"></script>
 </html>
