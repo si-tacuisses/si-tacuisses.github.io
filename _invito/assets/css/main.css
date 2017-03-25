@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700");
 
 /*
 	Identity by HTML5 UP
@@ -221,6 +221,14 @@
 		font-size: 1em;
 	}
 
+	p strong {
+		font-weight: 700;
+		font-size: 1.4em;
+	}
+
+	h2 strong {
+		font-weight: 700
+	}
 	@media screen and (max-width: 480px) {
 
 		h1 {
@@ -621,7 +629,7 @@
 		height: 2.75em;
 		line-height: 2.75em;
 		padding: 0 1.5em;
-		background-color: transparent;
+		background-color: rgb(235, 181, 119);
 		border-radius: 4px;
 		border: solid 1px #c8cccf;
 		color: #414f57 !important;
@@ -629,6 +637,7 @@
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
+		font-weight: 700
 	}
 
 		input[type="submit"]:hover,
