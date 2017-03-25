@@ -15,7 +15,7 @@ code: true
 mma: false
 ---
 
-*Note: The tutorial at the time of writing does not work from all locations and frequent airbnb updates to its website make it difficult to maintain. The concepts introduced here with some modifications are still valuable in getting you started. In any case I wish luck with scraping!*
+*Note 24/03/2017: The tutorial at the time of writing does not work from all locations and frequent airbnb updates to its website make it difficult to maintain. The concepts introduced here with some modifications are still valuable in getting you started. In any case I wish luck with scraping!*
 
 The web is full of wonderful and freely available information. Some of it is readily available and neatly organized (see [this repo](https://github.com/caesar0301/awesome-public-datasets)) and some of it is hiding in plain sight. I am speaking about unstructured data on websites, which has either never been organized or the owner does not offer easy access and thus sits there locked away in dusty HTML files.
 Some of this wealth of data I am speaking about is publicly available and comes from state of the art databases, but there is no easy way to access it, such as airbnb.com. 
