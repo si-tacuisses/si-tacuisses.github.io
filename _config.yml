@@ -34,6 +34,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 comments: true
 
+
 # Site owner
 owner:
   name: Luca Verginer
